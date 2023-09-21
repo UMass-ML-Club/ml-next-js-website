@@ -22,6 +22,7 @@ import {
   IconPhoneCall,
   IconRocket,
   IconRss,
+  IconMicrophone2,
 } from '@tabler/icons-react';
 import {
   AnnouncementProps,
@@ -52,22 +53,33 @@ import reactLogo from '~/assets/images/react-logo.png';
 import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
 import typescriptLogo from '~/assets/images/typescript-logo.png';
 
+const discordLink = 'https://discord.gg/HetVtPe2yZ';
+
 // Announcement data
 export const announcementData: AnnouncementProps = {
   title: 'NEW',
   callToAction: {
-    text: 'This template is made with Next.js 13 using the new App Router »',
+    text: 'Official Website for the University of Massachusetts Amherst Machine Learning Club',
     href: 'https://nextjs.org/docs/app',
   },
   callToAction2: {
-    text: 'Follow @onWidget on Twitter',
-    href: 'https://twitter.com/intent/user?screen_name=onwidget',
+    text: 'Join the UMass ML Discord',
+    href: discordLink,
   },
 };
 
 // Header data
 export const headerData: HeaderProps = {
   links: [
+    {
+      label: 'Home',
+      href: '/',
+    },
+    {
+      label: 'Lecture Series',
+      href: '/lectures',
+      icon: IconMicrophone2,
+    },
     {
       label: 'Pages',
       icon: IconChevronDown,
@@ -422,9 +434,9 @@ export const faqs4Data: FAQsProps = {
 
 // CallToAction data
 export const callToActionData: CallToActionProps = {
-  title: 'Next.js + Tailwind CSS',
+  title: 'Sign up now!',
   subtitle:
-    'Aliquam sodales porttitor lacus ac tristique. Etiam posuere elit at leo feugiat sodales. Sed ac mauris quis sem tempor condimentum non at metus.',
+    'Receive up-to-date information about our meetings, events, and other opportunities to get involved with the club.',
   callToAction: {
     text: 'Get template',
     href: 'https://github.com/onwidget/tailnext',
@@ -432,18 +444,13 @@ export const callToActionData: CallToActionProps = {
   },
   items: [
     {
-      title: 'Get template',
-      description: 'Aliquam sodales est lectus, quis.',
-      href: 'https://github.com/onwidget/tailnext',
-    },
-    {
       title: 'Learn more',
-      description: 'Class aptent taciti sociosqu ad litora torquent per conubia.',
-      href: '/',
+      description: 'Find out more information about the club by clicking this link.',
+      href: '/aboutus',
     },
     {
       title: 'Subscribe',
-      description: 'Morbi orci nunc, euismod ac dui id, convallis.',
+      description: 'Subscribe to the email list to receive updates about the club.',
       form: {
         icon: IconMail,
         input: {

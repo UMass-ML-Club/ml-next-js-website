@@ -1,12 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from 'next/image';
 import { announcementData } from '~/shared/data';
 
 const Announcement = () => {
   const { title, callToAction, callToAction2 } = announcementData;
 
   return (
-    <div className="hidden overflow-hidden text-ellipsis whitespace-nowrap border-b border-blue-900 bg-blue-900 px-3 py-2 text-sm text-gray-200 md:block">
-      <span className="bg-blue-800 py-0.5 px-1 text-xs font-semibold">{title}</span>{' '}
+    <div className="hidden overflow-hidden text-ellipsis whitespace-nowrap border-b border-umass-neutral-dark dark:border-umass-neutral-light bg-umass-neutral px-3 py-2 text-sm text-gray-200 md:block">
+      <span className="bg-blue-800 px-1 py-0.5 text-xs font-semibold">{title}</span>{' '}
       {callToAction && callToAction.text && callToAction.href && (
         <a
           href={callToAction.href}
@@ -14,24 +15,16 @@ const Announcement = () => {
           rel="noreferrer noopened"
           className="cursor-pointer text-gray-100 hover:underline"
         >
-          {callToAction.icon && <callToAction.icon className="mr-1 -ml-1.5 h-5 w-5" />} {callToAction.text}
+          {callToAction.icon && <callToAction.icon className="-ml-1.5 mr-1 h-5 w-5" />} {callToAction.text}
         </a>
       )}
       {callToAction2 && callToAction2.text && callToAction2.href && (
-        <a
-          href={callToAction2.href}
-          target="_blank"
-          rel="noreferrer"
-          className="float-right"
-          title={callToAction2.text}
-        >
-          <img
-            src="https://img.shields.io/twitter/url/https/twitter.com/onwidget.svg?style=social&amp;label=Follow%20%40onWidget"
-            alt="Follow @onWidget"
-            width="125"
-            height="20"
-          />
-        </a>
+        <div className="float-right inline-flex items-center">
+          <p className="font-serif">Join the Discord:</p>
+          <a href={callToAction2.href} target="_blank" rel="noreferrer" className="ml-[2px]" title={callToAction2.text}>
+            <Image src="/svg/discord.svg" alt="Join the ML discord" width={25} height={25} />
+          </a>
+        </div>
       )}
     </div>
   );

@@ -33,6 +33,7 @@ const Card = ({ title, description, href, form }: Item) => (
             <button
               type={form.btn.type}
               className="rounded-br rounded-tr border-l-[1px] border-gray-400 bg-primary-600 px-4 py-2 text-white"
+              // TODO: add onClick handler for the email list sign up
             >
               {form.btn.title}
             </button>

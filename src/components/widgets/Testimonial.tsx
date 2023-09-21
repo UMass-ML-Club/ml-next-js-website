@@ -7,7 +7,7 @@ const Testimonial = () => {
   const { header, testimonials } = testimonialData;
 
   return (
-    <section className="bg-primary-50 dark:bg-slate-800" id="testimonial">
+    <section className="bg-umass-neutral-light dark:bg-umass-neutral-dark" id="testimonial">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         {header && <HeaderWidget header={header} titleClassname="text-2xl sm:text-3xl" />}
         <div className="flex items-stretch justify-center">

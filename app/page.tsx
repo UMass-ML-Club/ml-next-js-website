@@ -31,18 +31,21 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <Hero data={heroData} />
-      <SocialProof {...socialProofData} />
-      <Features3 {...featuresData} />
-      <Content {...contentData} />
-      <Content {...content2Data} />
-      <Steps />
-      <Testimonial />
-      <FAQs2 {...faqsData2} />
-      <Pricing {...pricingData} />
-      <Team />
-      <Contact />
-      <CallToAction2 {...callToActionData} />
+      <main>
+        <div className="m-4 flex items-center justify-center">
+          <h1 className="flex items-center justify-center font-sans text-4xl">
+            Welcome to the University of Massachusetts Amherst Machine Learning Club
+          </h1>
+        </div>
+        <p className="mt-4 flex items-center justify-center font-sans">
+          The place to learn all about ML at UMass Amherst. No experience necessary.
+        </p>
+        <Testimonial />
+        <FAQs2 {...faqsData2} />
+        <Team />
+        <Contact />
+        <CallToAction2 {...callToActionData} />
+      </main>
     </>
   );
 }

@@ -1,10 +1,10 @@
 module.exports.SITE = {
-  name: 'TailNext',
+  name: 'University of Massachusetts Amherst Machine Learning Club',
 
-  origin: 'https://tailnext.vercel.app',
+  origin: 'https://tailnext.vercel.app', // TODO: Change this to your website
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'TailNext — Your website with Next.js + Tailwind CSS',
-  description: 'TailNext is a free and ready to start template to make your website using Next.js and Tailwind CSS.',
+  title: 'UMass Machine Learning Club',
+  description: 'A club for students interested in machine learning at UMass Amherst.',
 };

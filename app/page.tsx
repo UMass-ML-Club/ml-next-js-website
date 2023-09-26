@@ -23,6 +23,7 @@ import {
   socialProofData,
 } from '~/shared/data';
 import Contact from '~/components/widgets/Contact';
+import Main from '~/components/widgets/Main';
 
 export const metadata: Metadata = {
   title: SITE.title,
@@ -31,21 +32,12 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <main>
-        <div className="m-4 flex items-center justify-center">
-          <h1 className="flex items-center justify-center font-sans text-4xl">
-            Welcome to the University of Massachusetts Amherst Machine Learning Club
-          </h1>
-        </div>
-        <p className="mt-4 flex items-center justify-center font-sans">
-          The place to learn all about ML at UMass Amherst. No experience necessary.
-        </p>
-        <Testimonial />
-        <FAQs2 {...faqsData2} />
-        <Team />
-        <Contact />
-        <CallToAction2 {...callToActionData} />
-      </main>
+      <Main />
+      <Testimonial />
+      <FAQs2 {...faqsData2} />
+      <Team />
+      <Contact />
+      <CallToAction2 {...callToActionData} />
     </>
   );
 }

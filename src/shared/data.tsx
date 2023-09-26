@@ -77,8 +77,17 @@ export const headerData: HeaderProps = {
     },
     {
       label: 'Lecture Series',
-      href: '/lectures',
       icon: IconMicrophone2,
+      links: [
+        {
+          label: 'Beginner Series',
+          href: '/beginner-series',
+        },
+        {
+          label: 'Advanced Series',
+          href: '/advanced-series',
+        },
+      ],
     },
     {
       label: 'Pages',
@@ -132,6 +141,19 @@ export const headerData: HeaderProps = {
   showRssFeed: false,
   position: 'right',
 };
+
+export const mainAnimationData = [
+  // animation data for the main page with a src and description
+  {
+    src: 'ai-animation.gif',
+    description: 'Learn about Neural Networks!',
+  },
+  { src: 'car.gif', description: 'Understand the basics behind the complex tasks like a self-driving car!' },
+  {
+    src: 'coding.gif',
+    description: 'Take in some breath-taking mathematical formulas to understand your knowledge!',
+  },
+];
 
 // Hero data
 export const heroData: HeroProps = {

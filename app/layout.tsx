@@ -42,7 +42,7 @@ export default function RootLayout({ children }: LayoutProps) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className="bg-umass-red tracking-tight text-gray-900 antialiased dark:text-slate-300">
+      <body className="bg-umass-neutral-light dark:bg-umass-neutral-dark tracking-tight text-gray-900 antialiased dark:text-slate-300">
         <Providers>
           <Announcement />
           <Header />

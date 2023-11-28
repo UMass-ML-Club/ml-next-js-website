@@ -758,113 +758,174 @@ export const stepsData: StepsProps = {
 // Team data
 export const teamData: TeamProps = {
   header: {
-    title: 'Team Members',
+    title: 'Officers',
     subtitle:
-      'Suspendisse in dui nibh. Donec enim leo, sodales et egestas id, malesuada non diam. Sed dapibus velit et mauris condimentum, vel imperdiet erat egestas.',
+      'Check out the officers of ML club! We are a group of students who are passionate about spreading knowledge about all fields of machine learning.',
     // highlight: 'Team',
   },
   teams: [
     {
-      name: 'Cindy Belcher',
-      occupation: 'SEO Consultant',
+      name: 'Ryan Bahlous-Boldi',
+      occupation: 'ML Club President',
       image: {
-        src: 'https://images.unsplash.com/photo-1637858868799-7f26a0640eb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Cindy Belcher',
+        src: '/images/officers/ryan.png',
+        alt: 'Ryan Bahlous-Boldi',
       },
       items: [
         {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: '#',
+          href: 'https://www.linkedin.com/in/ryanboldi/',
         },
         {
           title: 'Contact by email',
           icon: IconMail,
-          href: '#',
+          href: 'mailto:rbahlousbold@umass.edu',
         },
       ],
     },
     {
-      name: 'Toby Foster',
-      occupation: 'Marketing Tech',
+      name: 'Aadam Lokhandwala',
+      occupation: 'ML Club Vice President',
       image: {
-        src: 'https://images.unsplash.com/photo-1614583224978-f05ce51ef5fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2172&q=80',
-        alt: 'Toby Foster',
+        src: '/images/officers/aadam.png',
+        alt: 'Aadam Lokhandwala',
       },
       items: [
         {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: '#',
+          href: 'https://www.linkedin.com/in/aadamlok/',
         },
         {
           title: 'Contact by email',
           icon: IconMail,
-          href: '#',
+          href: 'mailto:alokhandwala@umass.edu',
         },
       ],
     },
     {
-      name: 'Clark Bourne',
-      occupation: 'Content Manager',
+      name: 'Nathan Wolf',
+      occupation: 'Social Media Manager',
       image: {
-        src: 'https://images.unsplash.com/photo-1639628735078-ed2f038a193e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
-        alt: 'Clark Bourne',
+        src: '/images/officers/nathan.png',
+        alt: 'Nathan Wolf',
       },
       items: [
         {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: '#',
+          href: 'https://www.linkedin.com/in/nathanw0lf/',
         },
         {
           title: 'Contact by email',
           icon: IconMail,
-          href: '#',
+          href: 'mailto:nwolf@umass.edu',
         },
       ],
     },
     {
-      name: 'Bella Chase',
-      occupation: 'UX Designer',
+      name: 'Hanna Jiang',
+      occupation: 'Marketing Manager',
       image: {
-        src: 'https://images.unsplash.com/photo-1628260412297-a3377e45006f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
-        alt: 'Bella Chase',
+        src: '/images/officers/hanna.png',
+        alt: 'Hanna Jiang',
       },
       items: [
         {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: '#',
+          href: 'https://www.linkedin.com/in/hanna-jiang/',
         },
         {
           title: 'Contact by email',
           icon: IconMail,
-          href: '#',
+          href: 'mailto:hannajiang@umass.edu',
+        },
+      ],
+    },
+    {
+      name: 'Pracha Promthaw',
+      occupation: 'Events Coordinator',
+      image: {
+        src: '/images/officers/kim.png',
+        alt: 'Pracha Promthaw',
+      },
+      items: [
+        {
+          title: 'Know more on Linkedin',
+          icon: IconBrandLinkedin,
+          href: 'https://www.linkedin.com/in/pracha-promthaw-5605041a6/',
+        },
+        {
+          title: 'Contact by email',
+          icon: IconMail,
+          href: 'mailto:ppromthaw@umass.edu',
+        },
+      ],
+    },
+    {
+      name: 'Karthik Shankar',
+      occupation: 'Lecturer',
+      image: {
+        src: '/images/officers/karthik.png',
+        alt: 'Karthik Shankar',
+      },
+      items: [
+        {
+          title: 'Know more on Linkedin',
+          icon: IconBrandLinkedin,
+          href: 'https://www.linkedin.com/in/karthik-shankar-6943b122a/',
+        },
+        {
+          title: 'Contact by email',
+          icon: IconMail,
+          href: 'mailto:kshankar@umass.edu',
+        },
+      ],
+    },
+    {
+      name: 'Ruchira Sharma',
+      occupation: 'Lecturer',
+      image: {
+        src: '/images/officers/ruchira.png',
+        alt: 'Ruichira Sharma',
+      },
+      items: [
+        {
+          title: 'Know more on Linkedin',
+          icon: IconBrandLinkedin,
+          href: 'https://www.linkedin.com/in/ruchirassharma/',
+        },
+        {
+          title: 'Contact by email',
+          icon: IconMail,
+          href: 'mailto:rssharma@umass.edu',
+        },
+      ],
+    },
+    {
+      name: 'Kien To',
+      occupation: 'Lecturer',
+      image: {
+        src: '/images/officers/kien.png',
+        alt: 'Kien To',
+      },
+      items: [
+        {
+          title: 'Know more on Linkedin',
+          icon: IconBrandLinkedin,
+          href: 'https://www.linkedin.com/in/kien-to-18171b175/',
+        },
+        {
+          title: 'Contact by email',
+          icon: IconMail,
+          href: 'mailto:ktto@umass.edu',
         },
       ],
     },
   ],
+  
 };
 
 // Testimonial data

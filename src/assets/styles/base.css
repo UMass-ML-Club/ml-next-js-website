@@ -24,6 +24,11 @@
   }
 }
 
+.gif-link{
+  @apply transition duration-0 hover:duration-500;
+  @apply hover:bg-black hover:text-white;
+}
+
 #home-banner{
   background: slategrey;
   margin-right: -10px;

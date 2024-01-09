@@ -5,7 +5,7 @@ import { mainAnimationData } from '~/shared/data';
 export default function Main() {
   return (
     <main className="bg-umass-neutral-light p-2 dark:bg-umass-neutral-dark">
-      <div className="flex items-center justify-center p-4">
+      <div className="flex items-center justify-center p-4" id="home-banner">
         <h1 className="flex items-center justify-center font-sans text-4xl">
           Welcome to the University of Massachusetts Amherst Machine Learning Club!
         </h1>

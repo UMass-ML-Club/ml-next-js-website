@@ -147,11 +147,13 @@ export const mainAnimationData = [
   {
     src: 'ai-animation.gif',
     description: 'Learn about Neural Networks!',
+    url: '/beginner-series'
   },
-  { src: 'car.gif', description: 'Understand the basics behind the complex tasks like a self-driving car!' },
+  { src: 'car.gif', description: 'Understand the basics behind the complex tasks like a self-driving car!',url:"/advanced-series"},
   {
     src: 'coding.gif',
     description: 'Take in some breath-taking mathematical formulas to understand your knowledge!',
+    url: "/projects"
   },
 ];
 

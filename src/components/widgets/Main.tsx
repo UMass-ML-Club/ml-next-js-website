@@ -5,7 +5,7 @@ import { mainAnimationData } from '~/shared/data';
 export default function Main() {
   return (
     <main className="p-2">
-      <div className="flex justify-center items-center p-4 font-sans text-4xl">
+      <div className="flex justify-center items-center p-4 font-sans text-4xl" id="home-banner">
         Welcome to the University of Massachusetts Amherst Machine Learning Club!
       </div>
       <p className="flex justify-center items-center py-4 font-sans">

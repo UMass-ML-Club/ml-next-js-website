@@ -146,14 +146,14 @@ export const mainAnimationData = [
   // animation data for the main page with a src and description
   {
     src: 'ai-animation.gif',
-    description: 'Learn about Neural Networks!',
+    description: 'Beginner Lectures',
     url: '/beginner-series'
   },
-  { src: 'car.gif', description: 'Understand the basics behind the complex tasks like a self-driving car!',url:"/advanced-series"},
+  { src: 'car.gif', description: 'Projects',url:"/projects"},
   {
     src: 'coding.gif',
-    description: 'Take in some breath-taking mathematical formulas to understand your knowledge!',
-    url: "/projects"
+    description: 'Advanced Lectures',
+    url: "/advanced-series"
   },
 ];
 

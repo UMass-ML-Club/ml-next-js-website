@@ -29,10 +29,15 @@
   @apply hover:bg-black hover:text-white;
 }
 
+.gif-caption{
+  font-size: 36px;
+}
+
 #home-banner{
   background: slategrey;
   margin-right: -10px;
   margin-left: -10px;
   @apply dark:bg-black
 }
+
 

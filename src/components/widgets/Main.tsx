@@ -20,7 +20,7 @@ export default function Main() {
           <a className="gif-link" href={item.url}>
             <div className="m-2 flex flex-col items-center" key={index}>
               <Image src={`/images/${item.src}`} alt={`AI Animation: ${index}`} width={250} height={250} />
-              <p className="flex items-center justify-center">{item.description}</p>
+              <b><p className="flex items-center justify-center gif-caption">{item.description}</p></b>
             </div>
           </a>
         ))}

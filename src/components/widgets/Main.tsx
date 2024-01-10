@@ -17,7 +17,7 @@ export default function Main() {
       {/** add in animated gif grid for information about the club */}
       <div className="m-2 grid grid-rows-3 md:grid-rows-1 md:grid-cols-3">
         {mainAnimationData.map((item, index) => (
-          <a className="gif-link" href={item.url}>
+          <a className="gif-link" href={item.url} key={index}>
             <div className="m-2 flex flex-col items-center" key={index}>
               <Image src={`/images/${item.src}`} alt={`AI Animation: ${index}`} width={250} height={250} />
               <b><p className="flex items-center justify-center gif-caption">{item.description}</p></b>

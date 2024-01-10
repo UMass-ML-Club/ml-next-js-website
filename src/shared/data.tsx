@@ -146,12 +146,14 @@ export const mainAnimationData = [
   // animation data for the main page with a src and description
   {
     src: 'ai-animation.gif',
-    description: 'Learn about Neural Networks!',
+    description: 'Beginner Lectures',
+    url: '/beginner-series'
   },
-  { src: 'car.gif', description: 'Understand the basics behind the complex tasks like a self-driving car!' },
+  { src: 'car.gif', description: 'Projects',url:"/projects"},
   {
     src: 'coding.gif',
-    description: 'Take in some breath-taking mathematical formulas to develop your knowledge!',
+    description: 'Advanced Lectures',
+    url: "/advanced-series"
   },
 ];
 
@@ -280,37 +282,33 @@ export const faqsData2: FAQsProps = {
   header: {
     title: 'Frequently Asked Questions',
     subtitle:
-      'Check out some general questions asked about machine learning.',
+      'Duis turpis dui, fringilla mattis sem nec, fringilla euismod neque. Morbi tincidunt lacus nec tortor scelerisque pulvinar.',
     highlight: 'FAQS',
   },
   items: [
     {
-      title: 'What is Machine Learning?',
-      description: `Machine Learning is the process of solving a task without being explicitly programmed. Machines discover their own algorithm.`,
+      title: 'What do I need to start?',
+      description: `Nunc mollis tempor quam, non fringilla elit sagittis in. Nullam vitae consectetur mi, a elementum arcu. Sed laoreet, ipsum et vehicula dignissim, leo orci pretium sem, ac condimentum tellus est quis ligula.`,
     },
     {
-      title: 'What are the different types of machine learning?',
-      description: `The different types of machine learning are supervised learning, unsupervised learning, semi-supervised learning, reinforcement learning, and deep learning.`,
+      title: 'How to install the NextJS + Tailwind CSS template?',
+      description: `Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer eleifend vestibulum nisl in iaculis. Mauris dictum ac purus vestibulum auctor. Praesent imperdiet lectus et massa faucibus, quis viverra massa rhoncus.`,
     },
     {
-      title: 'How does machine learning differ from general programming?',
-      description: 'In general programming, explicit instructions are written to perform specific tasks. In machine learning, algorithms learn patterns from data and make predictions or take actions without being explicitly programmed for each task.'
+      title: "What's something that you completely don't understand?",
+      description: `Mauris vitae eros a dui varius luctus. Suspendisse rutrum, sapien nec blandit bibendum, justo sapien sollicitudin erat, id aliquam sapien purus quis leo. Aliquam vulputate vestibulum consectetur.`,
     },
     {
-      title: 'What is a neural network?',
-      description: 'A neural network is a machine learning model inspired by the human brain. It consists of interconnected artificial neurons organized in layers. It learns by adjusting weights and biases to make predictions or classifications. Neural networks are powerful for tasks like image recognition and natural language processing.'
+      title: "What's an example of when you changed your mind?",
+      description: `Nunc dapibus lacinia ipsum ut elementum. Integer in pretium sapien. Ut pretium nisl mauris, ut rutrum justo condimentum id. Etiam aliquet, arcu at iaculis laoreet, est arcu egestas sapien, eget sollicitudin odio orci et nunc.`,
     },
     {
-      title: "What is overfitting, and how can you avoid it?",
-      description: `Overfitting occurs when a model performs well on the training data but fails to generalize to new, unseen data. To avoid overfitting, you can use techniques such as cross-validation, regularization, and collecting more diverse training data.`,
+      title: 'What is something that you would really like to try again?',
+      description: `Duis in maximus mauris, id eleifend mauris. Nam a fringilla arcu. Curabitur convallis, tellus non aliquet rhoncus, lacus massa auctor eros, in interdum lectus augue sed augue. Fusce tempor ex id faucibus efficitur.`,
     },
     {
-      title: 'What is the difference between deep learning and machine learning?',
-      description: `Deep learning is a subset of machine learning that focuses on using artificial neural networks with multiple layers to learn hierarchical representations of data. Machine learning, on the other hand, encompasses a broader range of algorithms and techniques for learning patterns from data.`,
-    },
-    {
-      title: 'What is the trade-off between bias and variance in machine learning?',
-      description: `The bias-variance trade-off refers to the problem of finding the right balance between a model that is too simple (high bias) and cannot capture the complexities of the data, and a model that is too complex (high variance) and overfits the training data. The goal is to minimize both bias and variance to achieve good generalization.`,
+      title: 'If you could only ask one question to each person you meet, what would that question be?',
+      description: `Nullam imperdiet sapien tincidunt erat dapibus faucibus. Vestibulum a sem nec lorem imperdiet scelerisque non sed lacus. Ut pulvinar id diam vitae auctor. Nam tempus, neque et elementum consectetur, ex ipsum pulvinar risus, vel sodales ligula tortor eu eros.`,
     },
   ],
 };
@@ -758,182 +756,121 @@ export const stepsData: StepsProps = {
 // Team data
 export const teamData: TeamProps = {
   header: {
-    title: 'Officers',
+    title: 'Team Members',
     subtitle:
-      'Check out the officers of ML club! We are a group of students who are passionate about spreading knowledge about all fields of machine learning.',
+      'Suspendisse in dui nibh. Donec enim leo, sodales et egestas id, malesuada non diam. Sed dapibus velit et mauris condimentum, vel imperdiet erat egestas.',
     // highlight: 'Team',
   },
   teams: [
     {
-      name: 'Ryan Bahlous-Boldi',
-      occupation: 'ML Club President',
+      name: 'Cindy Belcher',
+      occupation: 'SEO Consultant',
       image: {
-        src: '/images/officers/ryan.png',
-        alt: 'Ryan Bahlous-Boldi',
+        src: 'https://images.unsplash.com/photo-1637858868799-7f26a0640eb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+        alt: 'Cindy Belcher',
       },
       items: [
         {
+          title: 'Know more on Twitter',
+          icon: IconBrandTwitter,
+          href: '#',
+        },
+        {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: 'https://www.linkedin.com/in/ryanboldi/',
+          href: '#',
         },
         {
           title: 'Contact by email',
           icon: IconMail,
-          href: 'mailto:rbahlousbold@umass.edu',
+          href: '#',
         },
       ],
     },
     {
-      name: 'Aadam Lokhandwala',
-      occupation: 'ML Club Vice President',
+      name: 'Toby Foster',
+      occupation: 'Marketing Tech',
       image: {
-        src: '/images/officers/aadam.png',
-        alt: 'Aadam Lokhandwala',
+        src: 'https://images.unsplash.com/photo-1614583224978-f05ce51ef5fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2172&q=80',
+        alt: 'Toby Foster',
       },
       items: [
         {
+          title: 'Know more on Twitter',
+          icon: IconBrandTwitter,
+          href: '#',
+        },
+        {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: 'https://www.linkedin.com/in/aadamlok/',
+          href: '#',
         },
         {
           title: 'Contact by email',
           icon: IconMail,
-          href: 'mailto:alokhandwala@umass.edu',
+          href: '#',
         },
       ],
     },
     {
-      name: 'Nathan Wolf',
-      occupation: 'Social Media Manager',
+      name: 'Clark Bourne',
+      occupation: 'Content Manager',
       image: {
-        src: '/images/officers/nathan.png',
-        alt: 'Nathan Wolf',
+        src: 'https://images.unsplash.com/photo-1639628735078-ed2f038a193e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
+        alt: 'Clark Bourne',
       },
       items: [
         {
+          title: 'Know more on Twitter',
+          icon: IconBrandTwitter,
+          href: '#',
+        },
+        {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: 'https://www.linkedin.com/in/nathanw0lf/',
+          href: '#',
         },
         {
           title: 'Contact by email',
           icon: IconMail,
-          href: 'mailto:nwolf@umass.edu',
+          href: '#',
         },
       ],
     },
     {
-      name: 'Hanna Jiang',
-      occupation: 'Marketing Manager',
+      name: 'Bella Chase',
+      occupation: 'UX Designer',
       image: {
-        src: '/images/officers/hanna.png',
-        alt: 'Hanna Jiang',
+        src: 'https://images.unsplash.com/photo-1628260412297-a3377e45006f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
+        alt: 'Bella Chase',
       },
       items: [
         {
+          title: 'Know more on Twitter',
+          icon: IconBrandTwitter,
+          href: '#',
+        },
+        {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: 'https://www.linkedin.com/in/hanna-jiang/',
+          href: '#',
         },
         {
           title: 'Contact by email',
           icon: IconMail,
-          href: 'mailto:hannajiang@umass.edu',
-        },
-      ],
-    },
-    {
-      name: 'Pracha Promthaw',
-      occupation: 'Events Coordinator',
-      image: {
-        src: '/images/officers/kim.png',
-        alt: 'Pracha Promthaw',
-      },
-      items: [
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: 'https://www.linkedin.com/in/pracha-promthaw-5605041a6/',
-        },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: 'mailto:ppromthaw@umass.edu',
-        },
-      ],
-    },
-    {
-      name: 'Karthik Shankar',
-      occupation: 'Lecturer',
-      image: {
-        src: '/images/officers/karthik.png',
-        alt: 'Karthik Shankar',
-      },
-      items: [
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: 'https://www.linkedin.com/in/karthik-shankar-6943b122a/',
-        },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: 'mailto:kshankar@umass.edu',
-        },
-      ],
-    },
-    {
-      name: 'Ruchira Sharma',
-      occupation: 'Lecturer',
-      image: {
-        src: '/images/officers/ruchira.png',
-        alt: 'Ruichira Sharma',
-      },
-      items: [
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: 'https://www.linkedin.com/in/ruchirassharma/',
-        },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: 'mailto:rssharma@umass.edu',
-        },
-      ],
-    },
-    {
-      name: 'Kien To',
-      occupation: 'Lecturer',
-      image: {
-        src: '/images/officers/kien.png',
-        alt: 'Kien To',
-      },
-      items: [
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: 'https://www.linkedin.com/in/kien-to-18171b175/',
-        },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: 'mailto:ktto@umass.edu',
+          href: '#',
         },
       ],
     },
   ],
-  
 };
 
 // Testimonial data
 export const testimonialData: TestimonialProps = {
   header: {
-    title: 'What our club members say about us:',
-    // subtitle:
-    //   'Etiam sed odio et dolor auctor gravida. Curabitur tincidunt elit non risus pharetra sodales. Etiam sit amet mattis massa.',
+    title: 'What our customers say about us',
+    subtitle:
+      'Etiam sed odio et dolor auctor gravida. Curabitur tincidunt elit non risus pharetra sodales. Etiam sit amet mattis massa.',
     // highlight: 'Testimonial',
   },
   testimonials: [
@@ -949,30 +886,30 @@ export const testimonialData: TestimonialProps = {
       icon: IconBrandTwitter,
       href: '#',
     },
-    // {
-    //   name: 'Silver Jordan',
-    //   occupation: 'Senior Marketer',
-    //   comment:
-    //     'Mauris semper enim dolor, ac dictum sapien sollicitudin quis. Quisque id pharetra mi. Phasellus eu posuere lectus, vitae rhoncus velit. Nullam imperdiet purus quis dapibus vestibulum. Integer purus ex, hendrerit at elementum non, varius a nibh. Ut eget convallis mi. Morbi mattis, felis sit amet consectetur scelerisque, odio purus ornare sapien, in feugiat lorem tellus et magna. Pellentesque luctus dolor in ornare mattis.',
-    //   image: {
-    //     src: 'https://images.unsplash.com/photo-1565049786474-1dea82a8b995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-    //     alt: '',
-    //   },
-    //   icon: IconBrandTwitter,
-    //   href: '#',
-    // },
-    // {
-    //   name: 'Kelsey Arden',
-    //   occupation: 'Co-Founder & CEO',
-    //   comment:
-    //     'Sed malesuada rhoncus arcu, sit amet condimentum leo pharetra feugiat. In augue quam, venenatis nec dui in, auctor tempus libero. Aliquam tempus ex id metus viverra blandit. Proin varius venenatis tortor, a pellentesque enim malesuada a. Aliquam lectus magna, interdum eget odio non, consequat imperdiet ipsum.',
-    //   image: {
-    //     src: 'https://images.unsplash.com/photo-1659057106920-da022cfbc0cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-    //     alt: '',
-    //   },
-    //   icon: IconBrandTwitter,
-    //   href: '#',
-    // },
+    {
+      name: 'Silver Jordan',
+      occupation: 'Senior Marketer',
+      comment:
+        'Mauris semper enim dolor, ac dictum sapien sollicitudin quis. Quisque id pharetra mi. Phasellus eu posuere lectus, vitae rhoncus velit. Nullam imperdiet purus quis dapibus vestibulum. Integer purus ex, hendrerit at elementum non, varius a nibh. Ut eget convallis mi. Morbi mattis, felis sit amet consectetur scelerisque, odio purus ornare sapien, in feugiat lorem tellus et magna. Pellentesque luctus dolor in ornare mattis.',
+      image: {
+        src: 'https://images.unsplash.com/photo-1565049786474-1dea82a8b995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+        alt: '',
+      },
+      icon: IconBrandTwitter,
+      href: '#',
+    },
+    {
+      name: 'Kelsey Arden',
+      occupation: 'Co-Founder & CEO',
+      comment:
+        'Sed malesuada rhoncus arcu, sit amet condimentum leo pharetra feugiat. In augue quam, venenatis nec dui in, auctor tempus libero. Aliquam tempus ex id metus viverra blandit. Proin varius venenatis tortor, a pellentesque enim malesuada a. Aliquam lectus magna, interdum eget odio non, consequat imperdiet ipsum.',
+      image: {
+        src: 'https://images.unsplash.com/photo-1659057106920-da022cfbc0cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+        alt: '',
+      },
+      icon: IconBrandTwitter,
+      href: '#',
+    },
   ],
 };
 

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-
+import RightArrow from '../atoms/RightArrow'
 import { testimonialData } from '~/shared/data';
 import HeaderWidget from '../common/HeaderWidget';
 
@@ -11,7 +11,7 @@ const Testimonial = () => {
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         {header && <HeaderWidget header={header} titleClassname="text-2xl sm:text-3xl" />}
         <div className="flex justify-center">
-          <div className="grid grid-cols-3 gap-3 dark:text-white sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+          <div className="items-center grid grid-cols-4 gap-3 dark:text-white sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4">
             {testimonials.map(({ name, occupation, comment, image, icon: Icon, href }, index) => (
               <div
                 key={`item-testimonial-${index}`}
@@ -35,6 +35,7 @@ const Testimonial = () => {
                 </div>
               </div>
             ))}
+            <RightArrow></RightArrow>
           </div>
         </div>
       </div>

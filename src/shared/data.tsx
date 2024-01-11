@@ -868,15 +868,17 @@ export const teamData: TeamProps = {
 // Testimonial data
 export const testimonialData: TestimonialProps = {
   header: {
-    title: 'What our customers say about us',
+    title: 'Upcoming Events',
     subtitle:
-      'Etiam sed odio et dolor auctor gravida. Curabitur tincidunt elit non risus pharetra sodales. Etiam sit amet mattis massa.',
+      'Click arrow for more',
     // highlight: 'Testimonial',
   },
   testimonials: [
+    // TODO: Change type testimonial and add dates, remove comment, image, icon
+    // TODO: Link events to more info if necessary?
     {
-      name: 'Tayla Kirsten',
-      occupation: 'Marketing Manager',
+      name: 'Beginner Lecture: Reinforcement Learning',
+      occupation: 'ILC 420',
       comment:
         'Suspendisse mollis ante turpis, ut fermentum nulla finibus ac. Integer ut justo id dolor lobortis pharetra. Integer ultrices leo a nunc ullamcorper commodo. In id nulla et nibh pretium pretium non vel metus. Suspendisse dapibus quis lorem sit amet fermentum. Ut a dapibus justo. In faucibus molestie pretium. Cras eros orci, bibendum fringilla elit at, vehicula maximus eros. Aenean placerat aliquet mi, et pellentesque dolor gravida at.',
       image: {

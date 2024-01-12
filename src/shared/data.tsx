@@ -279,8 +279,7 @@ export const faqsData: FAQsProps = {
 export const faqsData2: FAQsProps = {
   header: {
     title: 'Frequently Asked Questions',
-    subtitle:
-      'Check out some general questions asked about machine learning.',
+    subtitle: 'Check out some general questions asked about machine learning.',
     highlight: 'FAQS',
   },
   items: [
@@ -294,14 +293,16 @@ export const faqsData2: FAQsProps = {
     },
     {
       title: 'How does machine learning differ from general programming?',
-      description: 'In general programming, explicit instructions are written to perform specific tasks. In machine learning, algorithms learn patterns from data and make predictions or take actions without being explicitly programmed for each task.'
+      description:
+        'In general programming, explicit instructions are written to perform specific tasks. In machine learning, algorithms learn patterns from data and make predictions or take actions without being explicitly programmed for each task.',
     },
     {
       title: 'What is a neural network?',
-      description: 'A neural network is a machine learning model inspired by the human brain. It consists of interconnected artificial neurons organized in layers. It learns by adjusting weights and biases to make predictions or classifications. Neural networks are powerful for tasks like image recognition and natural language processing.'
+      description:
+        'A neural network is a machine learning model inspired by the human brain. It consists of interconnected artificial neurons organized in layers. It learns by adjusting weights and biases to make predictions or classifications. Neural networks are powerful for tasks like image recognition and natural language processing.',
     },
     {
-      title: "What is overfitting, and how can you avoid it?",
+      title: 'What is overfitting, and how can you avoid it?',
       description: `Overfitting occurs when a model performs well on the training data but fails to generalize to new, unseen data. To avoid overfitting, you can use techniques such as cross-validation, regularization, and collecting more diverse training data.`,
     },
     {
@@ -925,7 +926,6 @@ export const teamData: TeamProps = {
       ],
     },
   ],
-  
 };
 
 // Testimonial data
@@ -1504,3 +1504,40 @@ export const footerData2: FooterProps = {
     </div>
   ),
 };
+
+export interface Href {
+  name: string;
+  link: string;
+}
+interface lectureData {
+  image: string;
+  title: string;
+  description: string;
+  lecturers: string[];
+  hrefs: Href[];
+}
+
+// lecture series data
+export const lectureSeriesData: lectureData[] = [
+  {
+    image: '/images/lectures/First_General_Body_Meeting.png',
+    title: 'First General Body Meeting',
+    description:
+      "At this meeting, we'll introduce the club and its goals. You'll also get to meet our officers and learn about what they do. This is a great opportunity to meet new poeple and to ensure that your suggesstions are incorporatd for the coming semster.",
+    lecturers: ['Ryan Bahlous-Boldi'],
+    hrefs: [],
+  },
+  {
+    image: '/images/lectures/intro_to_ML.jpg',
+    title: 'Introduction to Machine Learning',
+    description:
+      'Get a start to machine learning fundamentals, types, and various applications of machine learning in this beginner series lecture!',
+    lecturers: ['Ryan Bahlous-Boldi'],
+    hrefs: [
+      {
+        name: 'Google Slides',
+        link: 'https://docs.google.com/presentation/d/1KOlPG4bPs-OH_cFIJYdRwpqaBLmhdEYzByz2kW3NxjU/edit?usp=sharing',
+      },
+    ],
+  },
+];

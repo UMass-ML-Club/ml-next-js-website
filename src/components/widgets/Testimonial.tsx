@@ -1,10 +1,17 @@
 import Image from 'next/image';
 import RightArrow from '../atoms/RightArrow'
-import { testimonialData } from '~/shared/data';
+import { eventData } from '~/shared/data';
 import HeaderWidget from '../common/HeaderWidget';
 
+const dateComp = (a:{date:Date},b:{date:Date}) => {
+  return a.date<b.date?-1:1
+}
+
+
 const Testimonial = () => {
-  const { header, testimonials } = testimonialData;
+  const { header, testimonials } = eventData;
+  const events = testimonials.filter((event)=>event.date > new Date()).sort(dateComp).slice(0,3);
+  //TODO: Take first 3 of these (last 3?)
 //TODO: Grid with 2 diff width cols: cards and button, 90-10 ratio or whatever. Cards is a div that flex-wraps as it shrinks, and button vertically centers button
   //Or,
   return (
@@ -13,14 +20,14 @@ const Testimonial = () => {
         {header && <HeaderWidget header={header} titleClassname="text-2xl sm:text-3xl" />}
         <div className="flex flex-wrap justify-center">
           <div className="items-center grid grid-cols-1 gap-3 dark:text-white sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
-            {testimonials.map(({ name, occupation, comment, image, icon: Icon, href }, index) => (
+            {events.map(({name, location, description, date}, index) => (
               <div
                 key={`item-testimonial-${index}`}
                 className="col-span-3 flex-auto sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1"
               >
                 <div className="h-full bg-umass-red flex-flow card flex border-b-[3px] border-transparent text-center justify-center hover:border-primary-600 hover:shadow-lg hover:transition hover:duration-100">
                   <a
-                    href={href}
+                    href="#"
                     target="_blank"
                     rel="noopener noreferrer"
                     key={`item-testimonial-${index}`}
@@ -29,7 +36,7 @@ const Testimonial = () => {
                     <div className="mb-4 flex justify-center">
                       <div className="text-center">
                         <h3 className="font-semibold text-3xl">{name}</h3>
-                        <span className="">{occupation}</span>
+                        <span className="">{location}</span>
                       </div>
                     </div>
                   </a>

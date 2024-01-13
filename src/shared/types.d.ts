@@ -98,13 +98,12 @@ interface Team {
   items?: Array<Item>;
 }
 
-interface Testimonial {
+interface Event {
   name: string;
-  occupation: string;
-  comment: string;
+  location: string;
+  date: Date;
+  description?: string;
   image?: Image;
-  icon?: Function;
-  href?: string;
 }
 
 interface Link {
@@ -213,9 +212,9 @@ interface AnnouncementProps {
   callToAction2?: CallToAction;
 }
 
-interface TestimonialProps {
+interface EventProps {
   header?: Header;
-  testimonials: Array<Testimonial>;
+  testimonials: Array<Event>;
 }
 
 interface PricingProps {

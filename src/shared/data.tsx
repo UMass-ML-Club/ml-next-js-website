@@ -40,7 +40,7 @@ import {
   StatsProps,
   StepsProps,
   TeamProps,
-  TestimonialProps,
+  EventProps,
 } from './types';
 
 import cameraFrontImg from '~/assets/images/camera-front.jpg';
@@ -866,7 +866,7 @@ export const teamData: TeamProps = {
 };
 
 // Testimonial data
-export const testimonialData: TestimonialProps = {
+export const eventData: EventProps = {
   header: {
     title: 'Upcoming Events',
     subtitle:
@@ -878,40 +878,43 @@ export const testimonialData: TestimonialProps = {
     // TODO: Link events to more info if necessary?
     {
       name: 'Beginner Lecture: Reinforcement Learning',
-      occupation: 'ILC 420',
-      comment:
+      location: 'ILC 420',
+      description:
         'Suspendisse mollis ante turpis, ut fermentum nulla finibus ac. Integer ut justo id dolor lobortis pharetra. Integer ultrices leo a nunc ullamcorper commodo. In id nulla et nibh pretium pretium non vel metus. Suspendisse dapibus quis lorem sit amet fermentum. Ut a dapibus justo. In faucibus molestie pretium. Cras eros orci, bibendum fringilla elit at, vehicula maximus eros. Aenean placerat aliquet mi, et pellentesque dolor gravida at.',
+      date:new Date("2024-01-21T00:00:00"),
       image: {
         src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: '',
-      },
-      icon: IconBrandTwitter,
-      href: '#',
+      }
     },
     {
-      name: 'Silver Jordan',
-      occupation: 'Senior Marketer',
-      comment:
+      name: 'Project Check-In',
+      location: 'ILC 69',
+      description:
         'Mauris semper enim dolor, ac dictum sapien sollicitudin quis. Quisque id pharetra mi. Phasellus eu posuere lectus, vitae rhoncus velit. Nullam imperdiet purus quis dapibus vestibulum. Integer purus ex, hendrerit at elementum non, varius a nibh. Ut eget convallis mi. Morbi mattis, felis sit amet consectetur scelerisque, odio purus ornare sapien, in feugiat lorem tellus et magna. Pellentesque luctus dolor in ornare mattis.',
+      date: new Date("2024-01-22T12:00:00"),
       image: {
         src: 'https://images.unsplash.com/photo-1565049786474-1dea82a8b995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: '',
-      },
-      icon: IconBrandTwitter,
-      href: '#',
+      }
     },
     {
-      name: 'Kelsey Arden',
-      occupation: 'Co-Founder & CEO',
-      comment:
+      name: 'Too late to see',
+      location: 'ILC 42069',
+      description:
         'Sed malesuada rhoncus arcu, sit amet condimentum leo pharetra feugiat. In augue quam, venenatis nec dui in, auctor tempus libero. Aliquam tempus ex id metus viverra blandit. Proin varius venenatis tortor, a pellentesque enim malesuada a. Aliquam lectus magna, interdum eget odio non, consequat imperdiet ipsum.',
+      date: new Date("2025-01-01T13:00:00"),
       image: {
         src: 'https://images.unsplash.com/photo-1659057106920-da022cfbc0cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: '',
-      },
-      icon: IconBrandTwitter,
-      href: '#',
+      }
     },
+    {
+      name: "Data Science Club Speaker",
+      location: 'Another Dimension',
+      description:"racism bad.",
+      date:new Date("2024-01-19T10:00:00")
+    }
   ],
 };
 

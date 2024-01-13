@@ -18,12 +18,12 @@ const Testimonial = () => {
     <section className="bg-umass-neutral-light dark:bg-umass-neutral-dark" id="testimonial">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         {header && <HeaderWidget header={header} titleClassname="text-2xl sm:text-3xl" />}
-        <div className="flex flex-wrap justify-center">
-          <div className="items-center grid grid-cols-1 gap-3 dark:text-white sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
+        <div className="flex flex-wrap justify-center lg:pl-40 xl:pl-48">
+          <div className="justify-items-center items-center sm:justify-items-start grid grid-cols-1 gap-3 dark:text-white sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
             {events.map(({name, location, description, date}, index) => (
               <div
                 key={`item-testimonial-${index}`}
-                className="col-span-3 flex-auto sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1"
+                className="h-full w-full col-span-3 flex-auto sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1"
               >
                 <div className="h-full bg-umass-red flex-flow card flex border-b-[3px] border-transparent text-center justify-center hover:border-primary-600 hover:shadow-lg hover:transition hover:duration-100">
                   <a

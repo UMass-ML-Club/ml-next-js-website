@@ -2,7 +2,7 @@ import Image from 'next/image';
 import RightArrow from '../atoms/RightArrow'
 import { eventData } from '~/shared/data';
 import HeaderWidget from '../common/HeaderWidget';
-
+import EventCard from '../common/EventCard'
 const dateComp = (a:{date:Date},b:{date:Date}) => {
   return a.date<b.date?-1:1
 }
@@ -20,28 +20,8 @@ const Testimonial = () => {
         {header && <HeaderWidget header={header} titleClassname="text-2xl sm:text-3xl" />}
         <div className="flex flex-wrap justify-center lg:pl-40 xl:pl-48">
           <div className="justify-items-center items-center sm:justify-items-start grid grid-cols-1 gap-3 dark:text-white sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
-            {events.map(({name, location, description, date}, index) => (
-              <div
-                key={`item-testimonial-${index}`}
-                className="h-full w-full col-span-3 flex-auto sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1"
-              >
-                <div className="h-full bg-umass-red flex-flow card flex border-b-[3px] border-transparent text-center justify-center hover:border-primary-600 hover:shadow-lg hover:transition hover:duration-100">
-                  <a
-                    href="#"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    key={`item-testimonial-${index}`}
-                    className="card-body"
-                  >
-                    <div className="mb-4 flex justify-center">
-                      <div className="text-center">
-                        <h3 className="font-semibold text-3xl">{name}</h3>
-                        <span className="">{location}</span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
+            {events.map((event, index) => (
+              <EventCard event={event} idx={index}></EventCard>
             ))}
             <RightArrow></RightArrow>
           </div>

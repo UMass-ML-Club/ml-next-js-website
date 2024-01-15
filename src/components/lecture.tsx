@@ -47,7 +47,7 @@ function Lecture({
                 Link(s):{' '}
                 {hrefs.map((href, index) => (
                   <React.Fragment key={index}>
-                    <a target="_blank" href={href.link}>
+                    <a target="_blank" href={href.link} className='underline'>
                       <i>{href.name}</i>
                     </a>
                     {index !== hrefs.length - 1 ? ', ' : ''}

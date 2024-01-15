@@ -1540,4 +1540,130 @@ export const lectureSeriesData: lectureData[] = [
       },
     ],
   },
+  {
+    image: '/images/lectures/gradient_descent.png',
+    title: 'Math of ML',
+    description:
+      'Learn about fundamental mathematical concepts important to Machine Learning such as: Linear Algebra, Calculus, Backpropagation, and Gradient Optimizers.',
+    lecturers: ['Aadam Lokhandwala'],
+    hrefs: [
+      {
+        name: 'Echo 360 Recording',
+        link: 'https://echo360.org/media/6c82055c-99f1-4e4a-a9dc-077936aa7d85/public',
+      },
+    ],
+  },
+  {
+    image: '/images/lectures/perceptron.png',
+    title: 'Advanced Regression',
+    description:
+      'Dive deeper into Machine Learning mathematical concepts such as Multi-Layer Perceptrons, Nonlinear Regression, and Activation Functions.',
+    lecturers: ['Suryam Gupta'],
+    hrefs: [
+      {
+        name: 'Google Colab Demo 1',
+        link: 'https://colab.research.google.com/drive/1EoR9m3ShBM-AOBIx171NTwTMNMvg0xPf?usp=sharing',
+      },
+      {
+        name: 'Google Colab Demo 2',
+        link: 'https://colab.research.google.com/drive/1yiMCdko2geMkLePxbbILLY23w54ZSPed?usp=sharing',
+      },
+    ],
+  },
+  {
+    image: '/images/lectures/python.jpg',
+    title: 'Python for ML',
+    description:
+      'Learn the basics of Python and how to use it for Machine Learning. More specifically, certain technologies covered are Python along with NumPy, Pandas, PyTorch, and Hugging Face.',
+    lecturers: ['Karthik Shankar', 'Ruchira Sharma'],
+    hrefs: [
+      {
+        name: 'Echo360 Recording',
+        link: 'https://echo360.org/media/a3205c81-eaeb-4de5-bef0-3aa1f61700cd/public',
+      },
+    ],
+  },
+  {
+    image: '/images/lectures/computer_vision.jpg',
+    title: 'Computer Vision',
+    description:
+      'Learn about a specific field of Machine Learning, Computer Vision, and how it is used in the real world. Technologies covered are ConvNet, Classification Loss, and other Neural Network (NN) Models',
+    lecturers: ['Karthik Shankar', 'Kien To'],
+    hrefs: [
+      {
+        name: 'Google Slides',
+        link: 'https://docs.google.com/presentation/d/1UBsCH_3fXKcKo68OpATAtCFpg2oIfCz9SYnllmcdvTI/edit?usp=sharing',
+      },
+      {
+        name: 'Google Colab Demo',
+        link: 'https://colab.research.google.com/drive/1ffHtz3eBIu_2V12oa-FEletMq6SUSs77?usp=sharing',
+      },
+      {
+        name: 'Echo360 Recording',
+        link: 'https://echo360.org/media/cb9f8596-8bfb-4946-9bb0-4066deba6132/public',
+      },
+    ],
+  },
+  {
+    image: '/images/lectures/generative_AI.png',
+    title: 'Generative Machine Learning',
+    description:
+      'Learn more about the intricacies of Generative AI: Variational Autoencoders, and  Generative Adversarial Networks.',
+    lecturers: ['Suryam Gupta', 'Kien To'],
+    hrefs: [
+      {
+        name: 'Google Slides',
+        link: 'https://docs.google.com/presentation/d/10Ch_FuaDfua9c1yye1vbuGOYgaRKncB8qecnHzbfvRQ/edit?usp=sharing',
+      },
+      {
+        name: 'Google Colab Demo',
+        link: 'https://colab.research.google.com/drive/175OsVYjCBS4XBVMEKU0W0kI4VMeEKy7Y#scrollTo=QqBiMj6Sz9uj',
+      },
+      {
+        name: 'Echo360 Recording',
+        link: 'https://echo360.org/media/bbdf62e8-7534-4a9e-9bd9-5822cad3dd07/public',
+      },
+    ],
+  },
+  {
+    image: '/images/lectures/reinforcement_Learning.png',
+    title: 'Reinforcement Learning',
+    description:
+      'Learn about the basics of RL which was invented at UMass Amherst! Specific topics are Q-Learning, Tabular Reinforcement, and Function Approximation.',
+    lecturers: ['Aadam Lokhandwala'],
+    hrefs: [],
+  },
+  {
+    image: '/images/lectures/deep_reinforcement_learning.jpg',
+    title: 'Deep Reinforcement Learning',
+    description: 'Dive deeper into the previous talk on RL and learn Deep-Q Network and Proximal Policy Optimization.',
+    lecturers: ['Ryan Bahlous-Boldi'],
+    hrefs: [
+      { name: 'Google Colab Demo', link: 'https://colab.research.google.com/drive/19DiVgKY9ffo6ofdeqtASbgth8FJZRpMw' },
+    ],
+  },
+  {
+    image: '/images/lectures/nlp.png',
+    title: 'Natural Language Processing (NLP)',
+    description:
+      'Learn about the basics of NLP and how it is used in the real world. Specific topics are Basic NLP, Recurrent NNs (RNNs), and Long Short-Term Memory (LSTM).',
+    lecturers: ['Ruichira Sharma'],
+    hrefs: [],
+  },
+  {
+    image: '/images/lectures/evolution.png',
+    title: 'Evolutionary Computation',
+    description:
+      'Learn about the basics of Evolutionary Computation from Ryan, a leading researcher in the field! Specific topics include: NeuroEvolution of Augmenting Topologies (NEAT), HyperNEAT, Covariance Matrix Adaptation Evolution Strategy',
+    lecturers: ['Ryan Bahlous-Boldi'],
+    hrefs: [],
+  },
+  {
+    image: '/images/lectures/recommender.jpg',
+    title: 'Recommender Systems',
+    description:
+      'Ever wonder how Netflix and YouTube recommend content? This lecture is all about understanding how Information Retrieval and Recommender Systems work.',
+    lecturers: ['Kim'],
+    hrefs: [],
+  },
 ];

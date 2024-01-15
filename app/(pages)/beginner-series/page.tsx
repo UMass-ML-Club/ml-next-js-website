@@ -8,7 +8,7 @@ const Page: React.FC = () => {
     <main className="m-8">
       {lectureSeriesData.map((lecture, index) => {
         return (
-          <Fade direction={index % 2 == 0 ? 'right' : 'left'}>
+          <Fade direction={index % 2 == 0 ? 'right' : 'left'} key={index}>
             <Lecture
               image={lecture.image}
               title={lecture.title}

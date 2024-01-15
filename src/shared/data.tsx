@@ -40,7 +40,7 @@ import {
   StatsProps,
   StepsProps,
   TeamProps,
-  TestimonialProps,
+  EventProps,
 } from './types';
 
 import cameraFrontImg from '~/assets/images/camera-front.jpg';
@@ -146,12 +146,14 @@ export const mainAnimationData = [
   // animation data for the main page with a src and description
   {
     src: 'ai-animation.gif',
-    description: 'Learn about Neural Networks!',
+    description: 'Beginner Lectures',
+    url: '/beginner-series'
   },
-  { src: 'car.gif', description: 'Understand the basics behind the complex tasks like a self-driving car!' },
+  { src: 'car.gif', description: 'Projects',url:"/projects"},
   {
     src: 'coding.gif',
-    description: 'Take in some breath-taking mathematical formulas to understand your knowledge!',
+    description: 'Advanced Lectures',
+    url: "/advanced-series"
   },
 ];
 
@@ -279,8 +281,7 @@ export const faqsData: FAQsProps = {
 export const faqsData2: FAQsProps = {
   header: {
     title: 'Frequently Asked Questions',
-    subtitle:
-      'Duis turpis dui, fringilla mattis sem nec, fringilla euismod neque. Morbi tincidunt lacus nec tortor scelerisque pulvinar.',
+    subtitle: 'Check out some general questions asked about machine learning.',
     highlight: 'FAQS',
   },
   items: [
@@ -289,16 +290,18 @@ export const faqsData2: FAQsProps = {
       description: `Nunc mollis tempor quam, non fringilla elit sagittis in. Nullam vitae consectetur mi, a elementum arcu. Sed laoreet, ipsum et vehicula dignissim, leo orci pretium sem, ac condimentum tellus est quis ligula.`,
     },
     {
-      title: 'How to install the NextJS + Tailwind CSS template?',
-      description: `Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer eleifend vestibulum nisl in iaculis. Mauris dictum ac purus vestibulum auctor. Praesent imperdiet lectus et massa faucibus, quis viverra massa rhoncus.`,
+      title: 'How does machine learning differ from general programming?',
+      description:
+        'In general programming, explicit instructions are written to perform specific tasks. In machine learning, algorithms learn patterns from data and make predictions or take actions without being explicitly programmed for each task.',
     },
     {
-      title: "What's something that you completely don't understand?",
-      description: `Mauris vitae eros a dui varius luctus. Suspendisse rutrum, sapien nec blandit bibendum, justo sapien sollicitudin erat, id aliquam sapien purus quis leo. Aliquam vulputate vestibulum consectetur.`,
+      title: 'What is a neural network?',
+      description:
+        'A neural network is a machine learning model inspired by the human brain. It consists of interconnected artificial neurons organized in layers. It learns by adjusting weights and biases to make predictions or classifications. Neural networks are powerful for tasks like image recognition and natural language processing.',
     },
     {
-      title: "What's an example of when you changed your mind?",
-      description: `Nunc dapibus lacinia ipsum ut elementum. Integer in pretium sapien. Ut pretium nisl mauris, ut rutrum justo condimentum id. Etiam aliquet, arcu at iaculis laoreet, est arcu egestas sapien, eget sollicitudin odio orci et nunc.`,
+      title: 'What is overfitting, and how can you avoid it?',
+      description: `Overfitting occurs when a model performs well on the training data but fails to generalize to new, unseen data. To avoid overfitting, you can use techniques such as cross-validation, regularization, and collecting more diverse training data.`,
     },
     {
       title: 'What is something that you would really like to try again?',
@@ -864,50 +867,55 @@ export const teamData: TeamProps = {
 };
 
 // Testimonial data
-export const testimonialData: TestimonialProps = {
+export const eventData: EventProps = {
   header: {
-    title: 'What our customers say about us',
+    title: 'Upcoming Events',
     subtitle:
-      'Etiam sed odio et dolor auctor gravida. Curabitur tincidunt elit non risus pharetra sodales. Etiam sit amet mattis massa.',
+      'Click arrow for more',
     // highlight: 'Testimonial',
   },
   testimonials: [
+    // TODO: Change type testimonial and add dates, remove comment, image, icon
+    // TODO: Link events to more info if necessary?
     {
-      name: 'Tayla Kirsten',
-      occupation: 'Marketing Manager',
-      comment:
+      name: 'Beginner Lecture: Reinforcement Learning',
+      location: 'ILC 420',
+      description:
         'Suspendisse mollis ante turpis, ut fermentum nulla finibus ac. Integer ut justo id dolor lobortis pharetra. Integer ultrices leo a nunc ullamcorper commodo. In id nulla et nibh pretium pretium non vel metus. Suspendisse dapibus quis lorem sit amet fermentum. Ut a dapibus justo. In faucibus molestie pretium. Cras eros orci, bibendum fringilla elit at, vehicula maximus eros. Aenean placerat aliquet mi, et pellentesque dolor gravida at.',
+      date:new Date("2024-01-21T00:00:00"),
       image: {
         src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: '',
-      },
-      icon: IconBrandTwitter,
-      href: '#',
+      }
     },
     {
-      name: 'Silver Jordan',
-      occupation: 'Senior Marketer',
-      comment:
+      name: 'Project Check-In',
+      location: 'ILC 69',
+      description:
         'Mauris semper enim dolor, ac dictum sapien sollicitudin quis. Quisque id pharetra mi. Phasellus eu posuere lectus, vitae rhoncus velit. Nullam imperdiet purus quis dapibus vestibulum. Integer purus ex, hendrerit at elementum non, varius a nibh. Ut eget convallis mi. Morbi mattis, felis sit amet consectetur scelerisque, odio purus ornare sapien, in feugiat lorem tellus et magna. Pellentesque luctus dolor in ornare mattis.',
+      date: new Date("2024-01-22T12:00:00"),
       image: {
         src: 'https://images.unsplash.com/photo-1565049786474-1dea82a8b995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: '',
-      },
-      icon: IconBrandTwitter,
-      href: '#',
+      }
     },
     {
-      name: 'Kelsey Arden',
-      occupation: 'Co-Founder & CEO',
-      comment:
+      name: 'Too late to see',
+      location: 'ILC 42069',
+      description:
         'Sed malesuada rhoncus arcu, sit amet condimentum leo pharetra feugiat. In augue quam, venenatis nec dui in, auctor tempus libero. Aliquam tempus ex id metus viverra blandit. Proin varius venenatis tortor, a pellentesque enim malesuada a. Aliquam lectus magna, interdum eget odio non, consequat imperdiet ipsum.',
+      date: new Date("2025-01-01T13:00:00"),
       image: {
         src: 'https://images.unsplash.com/photo-1659057106920-da022cfbc0cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: '',
-      },
-      icon: IconBrandTwitter,
-      href: '#',
+      }
     },
+    {
+      name: "Data Science Club Speaker",
+      location: 'Another Dimension',
+      description:"racism bad.",
+      date:new Date("2024-01-19T10:00:00")
+    }
   ],
 };
 
@@ -1439,3 +1447,166 @@ export const footerData2: FooterProps = {
     </div>
   ),
 };
+
+export interface Href {
+  name: string;
+  link: string;
+}
+interface lectureData {
+  image: string;
+  title: string;
+  description: string;
+  lecturers: string[];
+  hrefs: Href[];
+}
+
+// lecture series data
+export const lectureSeriesData: lectureData[] = [
+  {
+    image: '/images/lectures/First_General_Body_Meeting.png',
+    title: 'First General Body Meeting',
+    description:
+      "At this meeting, we'll introduce the club and its goals. You'll also get to meet our officers and learn about what they do. This is a great opportunity to meet new poeple and to ensure that your suggesstions are incorporatd for the coming semster.",
+    lecturers: ['Ryan Bahlous-Boldi'],
+    hrefs: [],
+  },
+  {
+    image: '/images/lectures/intro_to_ML.jpg',
+    title: 'Introduction to Machine Learning',
+    description:
+      'Get a start to machine learning fundamentals, types, and various applications of machine learning in this beginner series lecture!',
+    lecturers: ['Ryan Bahlous-Boldi'],
+    hrefs: [
+      {
+        name: 'Google Slides',
+        link: 'https://docs.google.com/presentation/d/1KOlPG4bPs-OH_cFIJYdRwpqaBLmhdEYzByz2kW3NxjU/edit?usp=sharing',
+      },
+    ],
+  },
+  {
+    image: '/images/lectures/gradient_descent.png',
+    title: 'Math of ML',
+    description:
+      'Learn about fundamental mathematical concepts important to Machine Learning such as: Linear Algebra, Calculus, Backpropagation, and Gradient Optimizers.',
+    lecturers: ['Aadam Lokhandwala'],
+    hrefs: [
+      {
+        name: 'Echo 360 Recording',
+        link: 'https://echo360.org/media/6c82055c-99f1-4e4a-a9dc-077936aa7d85/public',
+      },
+    ],
+  },
+  {
+    image: '/images/lectures/perceptron.png',
+    title: 'Advanced Regression',
+    description:
+      'Dive deeper into Machine Learning mathematical concepts such as Multi-Layer Perceptrons, Nonlinear Regression, and Activation Functions.',
+    lecturers: ['Suryam Gupta'],
+    hrefs: [
+      {
+        name: 'Google Colab Demo 1',
+        link: 'https://colab.research.google.com/drive/1EoR9m3ShBM-AOBIx171NTwTMNMvg0xPf?usp=sharing',
+      },
+      {
+        name: 'Google Colab Demo 2',
+        link: 'https://colab.research.google.com/drive/1yiMCdko2geMkLePxbbILLY23w54ZSPed?usp=sharing',
+      },
+    ],
+  },
+  {
+    image: '/images/lectures/python.jpg',
+    title: 'Python for ML',
+    description:
+      'Learn the basics of Python and how to use it for Machine Learning. More specifically, certain technologies covered are Python along with NumPy, Pandas, PyTorch, and Hugging Face.',
+    lecturers: ['Karthik Shankar', 'Ruchira Sharma'],
+    hrefs: [
+      {
+        name: 'Echo360 Recording',
+        link: 'https://echo360.org/media/a3205c81-eaeb-4de5-bef0-3aa1f61700cd/public',
+      },
+    ],
+  },
+  {
+    image: '/images/lectures/computer_vision.jpg',
+    title: 'Computer Vision',
+    description:
+      'Learn about a specific field of Machine Learning, Computer Vision, and how it is used in the real world. Technologies covered are ConvNet, Classification Loss, and other Neural Network (NN) Models',
+    lecturers: ['Karthik Shankar', 'Kien To'],
+    hrefs: [
+      {
+        name: 'Google Slides',
+        link: 'https://docs.google.com/presentation/d/1UBsCH_3fXKcKo68OpATAtCFpg2oIfCz9SYnllmcdvTI/edit?usp=sharing',
+      },
+      {
+        name: 'Google Colab Demo',
+        link: 'https://colab.research.google.com/drive/1ffHtz3eBIu_2V12oa-FEletMq6SUSs77?usp=sharing',
+      },
+      {
+        name: 'Echo360 Recording',
+        link: 'https://echo360.org/media/cb9f8596-8bfb-4946-9bb0-4066deba6132/public',
+      },
+    ],
+  },
+  {
+    image: '/images/lectures/generative_AI.png',
+    title: 'Generative Machine Learning',
+    description:
+      'Learn more about the intricacies of Generative AI: Variational Autoencoders, and  Generative Adversarial Networks.',
+    lecturers: ['Suryam Gupta', 'Kien To'],
+    hrefs: [
+      {
+        name: 'Google Slides',
+        link: 'https://docs.google.com/presentation/d/10Ch_FuaDfua9c1yye1vbuGOYgaRKncB8qecnHzbfvRQ/edit?usp=sharing',
+      },
+      {
+        name: 'Google Colab Demo',
+        link: 'https://colab.research.google.com/drive/175OsVYjCBS4XBVMEKU0W0kI4VMeEKy7Y#scrollTo=QqBiMj6Sz9uj',
+      },
+      {
+        name: 'Echo360 Recording',
+        link: 'https://echo360.org/media/bbdf62e8-7534-4a9e-9bd9-5822cad3dd07/public',
+      },
+    ],
+  },
+  {
+    image: '/images/lectures/reinforcement_Learning.png',
+    title: 'Reinforcement Learning',
+    description:
+      'Learn about the basics of RL which was invented at UMass Amherst! Specific topics are Q-Learning, Tabular Reinforcement, and Function Approximation.',
+    lecturers: ['Aadam Lokhandwala'],
+    hrefs: [],
+  },
+  {
+    image: '/images/lectures/deep_reinforcement_learning.jpg',
+    title: 'Deep Reinforcement Learning',
+    description: 'Dive deeper into the previous talk on RL and learn Deep-Q Network and Proximal Policy Optimization.',
+    lecturers: ['Ryan Bahlous-Boldi'],
+    hrefs: [
+      { name: 'Google Colab Demo', link: 'https://colab.research.google.com/drive/19DiVgKY9ffo6ofdeqtASbgth8FJZRpMw' },
+    ],
+  },
+  {
+    image: '/images/lectures/nlp.png',
+    title: 'Natural Language Processing (NLP)',
+    description:
+      'Learn about the basics of NLP and how it is used in the real world. Specific topics are Basic NLP, Recurrent NNs (RNNs), and Long Short-Term Memory (LSTM).',
+    lecturers: ['Ruichira Sharma'],
+    hrefs: [],
+  },
+  {
+    image: '/images/lectures/evolution.png',
+    title: 'Evolutionary Computation',
+    description:
+      'Learn about the basics of Evolutionary Computation from Ryan, a leading researcher in the field! Specific topics include: NeuroEvolution of Augmenting Topologies (NEAT), HyperNEAT, Covariance Matrix Adaptation Evolution Strategy',
+    lecturers: ['Ryan Bahlous-Boldi'],
+    hrefs: [],
+  },
+  {
+    image: '/images/lectures/recommender.jpg',
+    title: 'Recommender Systems',
+    description:
+      'Ever wonder how Netflix and YouTube recommend content? This lecture is all about understanding how Information Retrieval and Recommender Systems work.',
+    lecturers: ['Kim'],
+    hrefs: [],
+  },
+];

@@ -1,7 +1,7 @@
 import React from 'react';
-import Lecture from '~/components/lecture';
-import { lectureSeriesData } from '~/shared/data';
-import Fade from '~/components/Fade';
+import Lecture from '../../../src/components/lecture';
+import { lectureSeriesData } from '../../../src/shared/data';
+import Fade from '../../../src/components/Fade';
 
 const Page: React.FC = () => {
   return (

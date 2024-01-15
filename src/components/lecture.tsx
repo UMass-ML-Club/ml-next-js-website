@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import { Href } from '~/shared/data';
+import { Href } from '../shared/data';
 
 function Lecture({
   image,

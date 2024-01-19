@@ -98,7 +98,7 @@ interface Team {
   items?: Array<Item>;
 }
 
-interface Event {
+interface UpcomingEvent {
   name: string;
   location: string;
   date: Date;
@@ -214,7 +214,7 @@ interface AnnouncementProps {
 
 interface EventProps {
   header?: Header;
-  testimonials: Array<Event>;
+  testimonials: Array<UpcomingEvent>;
 }
 
 interface PricingProps {

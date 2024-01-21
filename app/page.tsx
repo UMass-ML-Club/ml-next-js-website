@@ -34,8 +34,6 @@ export default function Page() {
     <>
       <Main />
       <Testimonial />
-      <FAQs2 {...faqsData2} />
-      <Team />
       <Contact />
       <CallToAction2 {...callToActionData} />
     </>

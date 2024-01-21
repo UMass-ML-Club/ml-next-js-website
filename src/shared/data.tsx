@@ -23,6 +23,11 @@ import {
   IconRocket,
   IconRss,
   IconMicrophone2,
+  IconSlideshow,
+  IconPresentationAnalytics,
+  IconNotebook,
+  IconTestPipe,
+  IconBrandDiscord
 } from '@tabler/icons-react';
 import {
   AnnouncementProps,
@@ -244,35 +249,27 @@ export const socialProofData: SocialProofProps = {
 // FAQS data
 export const faqsData: FAQsProps = {
   header: {
-    title: 'Frequently Asked Questions',
+    title: 'Frequently Asked Questions (Club specific)',
     subtitle:
-      'Duis turpis dui, fringilla mattis sem nec, fringilla euismod neque. Morbi tincidunt lacus nec tortor scelerisque pulvinar.',
+      'Deatailed below are general questions for the club and its operations.',
     highlight: 'FAQS',
   },
   items: [
     {
-      title: 'Who we are and what we do?',
-      description: `Nunc mollis tempor quam, non fringilla elit sagittis in. Nullam vitae consectetur mi, a elementum arcu. Sed laoreet, ipsum et vehicula dignissim, leo orci pretium sem, ac condimentum tellus est quis ligula.`,
+      title: 'What is our mission?',
+      description: `Our mission is to educate the public on all things Machine Learning, and to provide a community for students to learn and grow together.`,
     },
     {
-      title: 'What values and principles guide our work?',
-      description: `Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer eleifend vestibulum nisl in iaculis. Mauris dictum ac purus vestibulum auctor. Praesent imperdiet lectus et massa faucibus, quis viverra massa rhoncus.`,
+      title: 'What do we do?',
+      description: `At the UMass Machine Learning Club, we hold beginner and advanced lecture series, and in the upcoming semester (Spring '24) we plan to have everyone work on group projects with their friends from the club.`
     },
     {
       title: 'What is our experience?',
-      description: `Mauris vitae eros a dui varius luctus. Suspendisse rutrum, sapien nec blandit bibendum, justo sapien sollicitudin erat, id aliquam sapien purus quis leo. Aliquam vulputate vestibulum consectetur.`,
+      description: `Our experience ranges in almost every type of Machine Learning task, from Evolutional Neural Networks to Reinforcement Learning to Recommender Systems, the officers at the club have a wide array of knowledge and expertise. If we can't answer your question, we can also get you in touch with a respective researcher at the school.`,
     },
     {
       title: 'What is our team like?',
-      description: `Nunc dapibus lacinia ipsum ut elementum. Integer in pretium sapien. Ut pretium nisl mauris, ut rutrum justo condimentum id. Etiam aliquet, arcu at iaculis laoreet, est arcu egestas sapien, eget sollicitudin odio orci et nunc.`,
-    },
-    {
-      title: 'How do we engage with the community?',
-      description: `Duis in maximus mauris, id eleifend mauris. Nam a fringilla arcu. Curabitur convallis, tellus non aliquet rhoncus, lacus massa auctor eros, in interdum lectus augue sed augue. Fusce tempor ex id faucibus efficitur.`,
-    },
-    {
-      title: 'What support channels do we offer?',
-      description: `Nullam imperdiet sapien tincidunt erat dapibus faucibus. Vestibulum a sem nec lorem imperdiet scelerisque non sed lacus. Ut pulvinar id diam vitae auctor. Nam tempus, neque et elementum consectetur, ex ipsum pulvinar risus, vel sodales ligula tortor eu eros.`,
+      description: `Our team is a diverse group of Computer Science students who have interest in Machine Learning with experience in internships/research at various companies around the country.`,
     },
   ],
 };
@@ -280,14 +277,14 @@ export const faqsData: FAQsProps = {
 // FAQS data 2
 export const faqsData2: FAQsProps = {
   header: {
-    title: 'Frequently Asked Questions',
+    title: 'Frequently Asked Questions (ML specific)',
     subtitle: 'Check out some general questions asked about machine learning.',
     highlight: 'FAQS',
   },
   items: [
     {
-      title: 'What do I need to start?',
-      description: `Nunc mollis tempor quam, non fringilla elit sagittis in. Nullam vitae consectetur mi, a elementum arcu. Sed laoreet, ipsum et vehicula dignissim, leo orci pretium sem, ac condimentum tellus est quis ligula.`,
+      title: 'What is machine learning?',
+      description: 'Machine learning is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalize to unseen data, and thus perform tasks without explicit instructions.',
     },
     {
       title: 'How does machine learning differ from general programming?',
@@ -304,13 +301,17 @@ export const faqsData2: FAQsProps = {
       description: `Overfitting occurs when a model performs well on the training data but fails to generalize to new, unseen data. To avoid overfitting, you can use techniques such as cross-validation, regularization, and collecting more diverse training data.`,
     },
     {
-      title: 'What is something that you would really like to try again?',
-      description: `Duis in maximus mauris, id eleifend mauris. Nam a fringilla arcu. Curabitur convallis, tellus non aliquet rhoncus, lacus massa auctor eros, in interdum lectus augue sed augue. Fusce tempor ex id faucibus efficitur.`,
+      title: 'What are the 3 common types of machine learning problems?',
+      description: 'The 3 common types of machine learning problems are supervised, unsupervised, and reinforcement learning.',
     },
     {
-      title: 'If you could only ask one question to each person you meet, what would that question be?',
-      description: `Nullam imperdiet sapien tincidunt erat dapibus faucibus. Vestibulum a sem nec lorem imperdiet scelerisque non sed lacus. Ut pulvinar id diam vitae auctor. Nam tempus, neque et elementum consectetur, ex ipsum pulvinar risus, vel sodales ligula tortor eu eros.`,
+      title: 'What are some types of neural networks?',
+      description: 'Some types of neural networks are feedforward, convolutional, recurrent, generative adversarial networks, and much more. Tune into a meeting, ask an officer, or google to learn more!',
     },
+    {
+      title: 'What is ChatGPT and why is it so popular?',
+      description: 'ChatGPT is a neural network that was trained on a large dataset of conversations. It can generate realistic responses to messages and is used in many chatbots.',
+    }
   ],
 };
 
@@ -471,7 +472,7 @@ export const callToActionData: CallToActionProps = {
     {
       title: 'Learn more',
       description: 'Find out more information about the club by clicking this link.',
-      href: '/aboutus',
+      href: '/about',
     },
     {
       title: 'Subscribe',
@@ -618,38 +619,38 @@ export const featuresData2: FeaturesProps = {
 // Feature data 3
 export const featuresData3: FeaturesProps = {
   header: {
-    title: 'Services',
+    title: 'Club Events',
   },
   items: [
     {
-      title: 'Next.Js + Tailwind CSS Integration',
-      description: 'Nullam non sodales massa. Ut justo neque, elementum et vehicula vel, pellentesque non orci.',
-      icon: IconBrandTailwind,
+      title: 'Beginner Lecture Series',
+      description: 'Weekly lectures on the basics of many fields of machine learning.',
+      icon: IconSlideshow,
     },
     {
-      title: 'Ready-to-use Components',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      icon: IconComponents,
+      title: 'Advanced Lecture Series',
+      description: 'Talks from graduate students performing research in the field of machine learning.',
+      icon: IconPresentationAnalytics,
     },
     {
-      title: 'Best Practices',
-      description: 'Morbi sit amet arcu vitae metus molestie auctor sit amet in risus. Sed vel lacinia purus.',
-      icon: IconListCheck,
+      title: 'Colab Notebooks',
+      description: 'In many beginner lectures, we use Google Colab notebooks (a tool used by ML experts) to perform hands-on demonstrations.',
+      icon: IconNotebook,
     },
     {
-      title: 'Excellent Page Speed',
-      description: 'Phasellus id cursus urna. Nullam feugiat tellus sed euismod venenatis.',
-      icon: IconRocket,
+      title: 'Projects',
+      description: 'Create projects with people you meet in the club, expanding on knowledge gathered from lectures.',
+      icon: IconTestPipe,
     },
     {
-      title: 'Search Engine Optimization (SEO)',
+      title: 'Discord',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-      icon: IconArrowsRightLeft,
+        'Meet like minded ML enthusiasts and get help from other students in the club on our Discord server.',
+      icon: IconBrandDiscord,
     },
     {
       title: 'Open to new ideas and contributions',
-      description: 'Maecenas urna augue, commodo vitae lectus euismod, tempor aliquam arcu.',
+      description: "At ML club, the officers are always looking to hear feedback and ways you think we can improve. Please don't hesitate to reach out to us!",
       icon: IconBulb,
     },
   ],
@@ -1157,20 +1158,20 @@ export const comparisonData: ComparisonProps = {
 export const statsData: StatsProps = {
   items: [
     {
-      title: 13269,
-      description: 'Downloads',
+      title: 1068,
+      description: 'Discord members',
     },
     {
-      title: 24.8,
-      description: 'Stars',
+      title: 15,
+      description: 'Lectures per semester',
     },
     {
-      title: 1767.77,
-      description: 'Forks',
+      title: 5,
+      description: 'Research Talks per Sem',
     },
     {
-      title: 484000,
-      description: 'Users',
+      title: 8,
+      description: 'Officers to help you!',
     },
   ],
 };
@@ -1179,30 +1180,20 @@ export const statsData: StatsProps = {
 export const contactData: ContactProps = {
   header: {
     title: 'Get in Touch',
-    subtitle: 'In hac habitasse platea dictumst',
+    subtitle: 'Reach out to the Machine Learning Club with any questions or concerns!',
     highlight: 'Contact',
   },
   content:
-    'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque sagittis ante, ac tincidunt sem venenatis ut.',
+    "Have any suggestions on how to improve the club? Didn't find relevant resources on the Discord channel? Wanted to complement a lecturer on their presentation? No matter the reason, we'd love to hear from you!",
   items: [
     {
       title: 'Our Address',
-      description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
+      description: ['140 Governors Dr, Amherst, MA 01002'],
       icon: IconMapPin,
-    },
-    {
-      title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: tailnext@gmail.com'],
-      icon: IconPhoneCall,
-    },
-    {
-      title: 'Working hours',
-      description: ['Monday - Friday: 08:00 - 17:00', 'Saturday & Sunday: 08:00 - 12:00'],
-      icon: IconClock,
     },
   ],
   form: {
-    title: 'Ready to Get Started?',
+    title: 'Fill out the following information to contact us!',
     inputs: [
       {
         type: 'text',

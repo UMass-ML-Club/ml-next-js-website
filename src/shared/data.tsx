@@ -931,7 +931,7 @@ export const teamData: TeamProps = {
 export const eventData: EventProps = {
   header: {
     title: 'Upcoming Events',
-    subtitle: 'Click arrow for more',
+    subtitle: 'Click arrow for more, click calendar ico below to add to your Google calendar.',
     // highlight: 'Testimonial',
   },
   testimonials: [

@@ -40,6 +40,37 @@ const Form = ({ title, description, inputs, radioBtns, textarea, checkboxes, btn
     });
   };
 
+  const handleClick = async (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+    // Prepare the data to be logged
+    const logData = {
+      inputValues,
+      radioBtnValue,
+      textareaValues,
+      checkedState,
+    };
+
+    // Write the data to the logging file
+    try {
+      // Make an HTTP POST request to the logging endpoint
+      const response = await fetch('/api/logging', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(logData),
+      });
+
+      if (response.ok) {
+        console.log('Data logged successfully');
+      } else {
+        console.error('Failed to log data');
+      }
+    } catch (error) {
+      console.error('Error logging data:', error);
+    }
+  }
+
   return (
     <div className="card h-fit max-w-6xl p-5 md:p-12" id="form">
       {title && <h2 className={`${description ? 'mb-2' : 'mb-4'} text-2xl font-bold`}>{title}</h2>}
@@ -126,7 +157,7 @@ const Form = ({ title, description, inputs, radioBtns, textarea, checkboxes, btn
         <div
           className={`${btnPosition === 'left' ? 'text-left' : btnPosition === 'right' ? 'text-right' : 'text-center'}`}
         >
-          <button type={btn.type} className="btn btn-primary sm:mb-0">
+          <button type={btn.type} className="btn btn-primary sm:mb-0" onClick={handleClick}>
             {btn.title}
           </button>
         </div>

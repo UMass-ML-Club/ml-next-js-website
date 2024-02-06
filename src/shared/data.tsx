@@ -1544,6 +1544,10 @@ export const lectureSeriesData: lectureData[] = [
         name: 'Echo 360 Recording',
         link: 'https://echo360.org/media/6c82055c-99f1-4e4a-a9dc-077936aa7d85/public',
       },
+      {
+        name: 'Google Colab Demo',
+        link: 'https://colab.research.google.com/drive/1jZrzpNziMsCOryoHLLOxmcmrwf2cOBcO?usp=sharing'
+      }
     ],
   },
   {
@@ -1574,6 +1578,10 @@ export const lectureSeriesData: lectureData[] = [
         name: 'Echo360 Recording',
         link: 'https://echo360.org/media/a3205c81-eaeb-4de5-bef0-3aa1f61700cd/public',
       },
+      {
+        name: 'Google Colab Demo',
+        link: 'https://colab.research.google.com/drive/1jZrzpNziMsCOryoHLLOxmcmrwf2cOBcO?usp=sharing',
+      }
     ],
   },
   {

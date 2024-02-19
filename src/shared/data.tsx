@@ -95,7 +95,11 @@ export const headerData: HeaderProps = {
       ],
     },
     {
-      label: 'Pages',
+      label: 'Contact',
+      href: '/contact',
+    },
+    {
+      label: 'Info',
       icon: IconChevronDown,
       links: [
         {
@@ -103,40 +107,22 @@ export const headerData: HeaderProps = {
           href: '/about',
         },
         {
-          label: 'Pricing',
-          href: '/pricing',
-        },
-        {
           label: 'Contact us',
           href: '/contact',
-        },
-        {
-          label: 'FAQs',
-          href: '/faqs',
-        },
-        {
-          label: 'Privacy Policy',
-          href: '/privacy',
-        },
-        {
-          label: 'Terms & Conditions',
-          href: '/terms',
-        },
+        }
       ],
     },
-    {
-      label: 'Blog',
-      href: '/blog',
-    },
-    {
-      label: 'Contact',
-      href: '/contact',
-    },
+    // {
+    //   label: 'Blog',
+    //   href: '/blog',
+    // }, 
+    // TODO: add a blog
+
   ],
   actions: [
     {
-      text: 'Download',
-      href: 'https://github.com/onwidget/tailnext',
+      text: 'Discord',
+      href: discordLink,
       targetBlank: true,
       btnType: 'primary',
     },
@@ -1426,36 +1412,22 @@ export const footerData: FooterProps = {
 
 // Footer2 data
 export const footerData2: FooterProps = {
-  links: [
-    {
-      label: 'Terms & Conditions',
-      href: '/terms',
-    },
-    {
-      label: 'Privacy Policy',
-      href: '/privacy',
-    },
-  ],
+  links: [],
   columns: [
     {
       title: 'Address',
-      texts: ['51 Phasellus Avenue Maecenas', 'Aliquam, AQ 52098'],
-    },
-    {
-      title: 'Phone',
-      texts: ['Reception: +105 123 4567', 'Office: +107 235 7890'],
+      texts: ['140 Governors Dr, Amherst, MA 01002'],
     },
     {
       title: 'Email',
-      texts: ['Office: info@example.com', 'Site: https://example.com'],
+      texts: ['President: rbahlousbold@umass.edu', 'Vice-President: alokhandwala@umass.edu'],
     },
   ],
   socials: [
-    { label: 'Twitter', icon: IconBrandTwitter, href: '#' },
-    { label: 'Instagram', icon: IconBrandInstagram, href: '#' },
-    { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
-    { label: 'RSS', icon: IconRss, href: '#' },
-    { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/onwidget/tailnext' },
+    // { label: 'Twitter', icon: IconBrandTwitter, href: '#' },
+    { label: 'Discord', icon: IconBrandDiscord, href: discordLink},
+    { label: 'Instagram', icon: IconBrandInstagram, href: 'https://www.instagram.com/umass_mlclub/' },
+    { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/UMass-ML-Club/ml-next-js-website' },
   ],
   footNote: (
     <div className="mr-4 text-sm dark:text-slate-400">

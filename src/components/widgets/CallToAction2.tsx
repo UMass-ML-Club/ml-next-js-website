@@ -1,4 +1,5 @@
 import { IconChevronRight } from '@tabler/icons-react';
+import Link from 'next/link';
 import { CallToActionProps, Item } from '~/shared/types';
 
 const Card = ({ title, description, href, form }: Item) => (
@@ -57,15 +58,14 @@ const CallToAction2 = ({ title, subtitle, items }: CallToActionProps) => (
             items.map(({ title, description, href, form }, index) => (
               <div key={`call-to-action-item-${index}`}>
                 {href ? (
-                  <a
+                  <Link
                     href={href}
                     className="w-full sm:mb-0"
-                    target="_blank"
                     rel="noopener noreferrer"
                     key={`item-cta-${index}`}
                   >
                     <Card title={title} description={description} href={href} form={form} />
-                  </a>
+                  </Link>
                 ) : (
                   <Card title={title} description={description} href={href} form={form} />
                 )}

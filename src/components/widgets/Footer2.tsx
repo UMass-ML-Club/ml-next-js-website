@@ -21,7 +21,7 @@ const Footer2 = () => {
           </div>
         ))}
         <div className="col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-1 xl:col-span-1">
-          <div className="mb-2 font-medium text-gray-800 dark:text-gray-300">Social</div>
+          <div className="mb-2 font-medium text-gray-800 dark:text-gray-300">Socials</div>
           <ul className="mb-4 -ml-2 flex md:order-1 md:mb-0">
             {socials.map(({ label, icon: Icon, href }, index) => (
               <li key={`item-social-${index}`}>

@@ -106,10 +106,10 @@ export const headerData: HeaderProps = {
           label: 'About us',
           href: '/about',
         },
-        {
-          label: 'Contact us',
-          href: '/contact',
-        }
+        // {
+        //   label: 'Contact us',
+        //   href: '/contact',
+        // }
       ],
     },
     // {

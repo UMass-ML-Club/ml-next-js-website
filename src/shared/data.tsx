@@ -115,7 +115,7 @@ export const headerData: HeaderProps = {
     // {
     //   label: 'Blog',
     //   href: '/blog',
-    // }, 
+    // },
     // TODO: add a blog
 
   ],
@@ -925,7 +925,7 @@ export const eventData: EventProps = {
     // TODO: Link events to more info if necessary?
     {
       name: 'SPRING 2024 KICKOFF MEETING',
-      location: 'ILC S231',
+      location: 'ILC S120',
       description:
         'Suspendisse mollis ante turpis, ut fermentum nulla finibus ac. Integer ut justo id dolor lobortis pharetra. Integer ultrices leo a nunc ullamcorper commodo. In id nulla et nibh pretium pretium non vel metus. Suspendisse dapibus quis lorem sit amet fermentum. Ut a dapibus justo. In faucibus molestie pretium. Cras eros orci, bibendum fringilla elit at, vehicula maximus eros. Aenean placerat aliquet mi, et pellentesque dolor gravida at.',
       date: new Date('2024-02-21T19:00:00'),

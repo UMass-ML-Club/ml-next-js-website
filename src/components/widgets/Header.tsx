@@ -97,7 +97,7 @@ const Header = () => {
                         {links.map(({ label: label2, href: href2 }, index2) => (
                           <li key={`item-link-${index2}`}>
                             <Link
-                              className="whitespace-no-wrap block px-5 py-2 first:rounded-t text-black last:rounded-b hover:bg-gray-300 dark:hover:bg-gray-700 md:hover:bg-gray-700"
+                              className="whitespace-no-wrap block px-5 py-2 first:rounded-t text-black dark:text-white last:rounded-b hover:bg-gray-300 dark:hover:bg-gray-700 md:hover:bg-gray-700"
                               href={href2 as string}
                               onClick={() =>
                                 isToggleMenuOpen ? handleToggleMenuOnClick() : handleCloseDropdownOnClick(index)

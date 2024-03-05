@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <main className="bg-umass-neutral-light dark:bg-umass-neutral pt-3 pb-3">
       <h1 className="text-4xl text-umass-red text-center dark:text-white">All Upcoming Events</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 p-8">
       {events.map((event, index) => (
         <EventCard event={event} idx={index} key={index}></EventCard>
         ))}

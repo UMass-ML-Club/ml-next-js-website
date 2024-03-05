@@ -104,6 +104,7 @@ interface UpcomingEvent {
   date: Date;
   description?: string;
   image?: Image;
+  location_id?: string;
 }
 
 interface Link {

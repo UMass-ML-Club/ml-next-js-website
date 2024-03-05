@@ -59,6 +59,7 @@ import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
 import typescriptLogo from '~/assets/images/typescript-logo.png';
 
 const discordLink = 'https://discord.gg/HetVtPe2yZ';
+export const mlClubEmail = 'umass.mlclub@gmail.com';
 
 // Announcement data
 export const announcementData: AnnouncementProps = {
@@ -933,6 +934,22 @@ export const eventData: EventProps = {
         src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: ''
       }
+    },
+    {
+      name: 'ML club project work!',
+      location: 'ILC N111',
+      description: `We are currently having all interested members working on various projects, 
+      from NLP to Computer Vision to Reinforcement Learning to Evolutionary Computation.
+      At the moment, we are not allowing new people to join teams, to make sure everyone who wants to join
+      a corresponding team get's a chance to.`,
+      date: new Date('2024-03-06T19:00:00'),
+      image: {
+        src: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        alt: 'project work picture'
+      },
+      location_id: 'ChIJU2GiMXfS5okRpmPHaKEzDSI',
+      // find location_id here: https://developers.google.com/maps/documentation/places/web-service/place-id
+      // generate iframe here: https://developers.google.com/maps/documentation/embed/quickstart
     }
   ],
 };

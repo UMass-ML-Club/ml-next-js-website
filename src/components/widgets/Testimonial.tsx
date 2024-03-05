@@ -31,7 +31,7 @@ const Testimonial = () => {
           </Link>
         </div>
         <div className="flex flex-wrap justify-center lg:pl-40 xl:pl-48">
-          <div className="grid grid-cols-1 items-center justify-items-center gap-3 dark:text-white sm:grid-cols-2 sm:justify-items-start md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
+          <div className="grid grid-cols-1 items-center justify-items-center gap-3 dark:text-white sm:grid-cols-2 sm:justify-items-start md:grid-cols-2 "> {/** lg:grid-cols-4 xl:grid-cols-4 */}
             {events.map((event, index) => (
               <EventCard key={index} event={event} idx={index}></EventCard>
             ))}

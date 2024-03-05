@@ -38,7 +38,7 @@ export default function EventCard({ event, idx }: { event: UpcomingEvent; idx: n
               // style="border:0"
               loading="lazy"
               allowFullScreen
-              src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJU2GiMXfS5okRpmPHaKEzDSI&key=AIzaSyANgsG-aIjnGpV1CFU_o1hlTnVERgWA90I"
+              src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJU2GiMXfS5okRpmPHaKEzDSI&key=${process.env.GOOGLE_MAPS_API_KEY}`}
             ></iframe>
           </div>
         )}

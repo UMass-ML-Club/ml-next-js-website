@@ -925,11 +925,11 @@ export const eventData: EventProps = {
     // TODO: Change type testimonial and add dates, remove comment, image, icon
     // TODO: Link events to more info if necessary?
     {
-      name: 'SPRING 2024 KICKOFF MEETING',
-      location: 'ILC S120',
+      name: 'PROJECT GROUPS BEGIN/PROJECTS START',
+      location: 'ILC N111',
       description:
         'Suspendisse mollis ante turpis, ut fermentum nulla finibus ac. Integer ut justo id dolor lobortis pharetra. Integer ultrices leo a nunc ullamcorper commodo. In id nulla et nibh pretium pretium non vel metus. Suspendisse dapibus quis lorem sit amet fermentum. Ut a dapibus justo. In faucibus molestie pretium. Cras eros orci, bibendum fringilla elit at, vehicula maximus eros. Aenean placerat aliquet mi, et pellentesque dolor gravida at.',
-      date: new Date('2024-02-21T19:00:00'),
+      date: new Date('2024-02-28T19:00:00'),
       image: {
         src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: ''

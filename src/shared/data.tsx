@@ -938,11 +938,11 @@ export const eventData: EventProps = {
     {
       name: 'ML club project work!',
       location: 'ILC N111',
-      description: `We are currently having all interested members working on various projects, 
+      description: `We are currently having all interested members working on various projects,
       from NLP to Computer Vision to Reinforcement Learning to Evolutionary Computation.
       At the moment, we are not allowing new people to join teams, to make sure everyone who wants to join
       a corresponding team get's a chance to.`,
-      date: new Date('2024-03-06T19:00:00'),
+      date: new Date('2024-03-13T19:00:00'),
       image: {
         src: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         alt: 'project work picture'

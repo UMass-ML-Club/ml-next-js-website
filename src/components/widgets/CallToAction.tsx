@@ -1,7 +1,7 @@
 import { CallToActionProps, CallToAction } from '~/shared/types';
 import CTA from '../common/CTA';
 
-const CallToAction = (props: { data: CallToActionProps }) => {
+const CallToActionItem = (props: { data: CallToActionProps }) => {
   const { title, subtitle, callToAction } = props.data;
   const { text, href } = callToAction as CallToAction;
 
@@ -28,4 +28,4 @@ const CallToAction = (props: { data: CallToActionProps }) => {
   );
 };
 
-export default CallToAction;
+export default CallToActionItem;

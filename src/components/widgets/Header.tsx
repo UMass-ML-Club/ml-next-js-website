@@ -8,8 +8,6 @@ import Logo from '~/components/atoms/Logo';
 import ToggleMenu from '../atoms/ToggleMenu';
 import { headerData } from '~/shared/data';
 import CTA from '../common/CTA';
-import CallToAction from './CallToAction';
-import Calendar from '../atoms/Calendar';
 
 const Header = () => {
   const { links, actions, isSticky, showToggleTheme, showRssFeed, position } = headerData;
@@ -143,7 +141,7 @@ const Header = () => {
                 {actions.map((callToAction, index) => (
                   <CTA
                     key={`item-action-${index}`}
-                    data={callToAction as CallToAction}
+                    data={callToAction as any} // TODO: Fix any type, was CallToAction earlier after the name changes in prev commits
                     class="m-1 px-5 py-2 text-sm font-semibold shadow-none md:px-6"
                   />
                 ))}

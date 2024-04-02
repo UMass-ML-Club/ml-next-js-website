@@ -1,10 +1,12 @@
 'use client';
 
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 import { FormProps } from '../../shared/types';
+import { CircularProgress } from '@mui/material';
 
 const Form = ({ title, description, inputs, radioBtns, textarea, checkboxes, btn, btnPosition }: FormProps) => {
-  const [inputValues, setInputValues] = useState([]);
+  const [inputValues, setInputValues] = useState([] as any); // TODO: type this
+  const [loading, setLoading] = useState(false);
   const [radioBtnValue, setRadioBtnValue] = useState('');
   const [textareaValues, setTextareaValues] = useState('');
   const [checkedState, setCheckedState] = useState<boolean[]>(new Array(checkboxes && checkboxes.length).fill(false));
@@ -42,40 +44,98 @@ const Form = ({ title, description, inputs, radioBtns, textarea, checkboxes, btn
 
   const handleClick = async (event: React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
-    // Prepare the data to be logged
-    const logData = {
-      inputValues,
-      radioBtnValue,
-      textareaValues,
-      checkedState,
-    };
+    // const res = await fetch('/api/sendEmail', {
+    //   method: 'POST',
+    //   // headers: {
+    //   //   'Content-Type': 'application/json',
+    //   // },
+    //   body: JSON.stringify({
+    //     name: inputValues[0],
+    //     email: inputValues[1],
+    //     message: textareaValues,
+    //   }),
+    // });
+    // const data = await res.json();
+    // console.log(data);
 
-    // Write the data to the logging file
     try {
-      // Make an HTTP POST request to the logging endpoint
-      const response = await fetch('/api/logging', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(logData),
+      const response = await fetch('/api/contact', {
+        method: 'post',
+        body: JSON.stringify({
+          name: inputValues[0],
+          email: inputValues[1],
+          message: textareaValues,
+        }),
       });
 
-      if (response.ok) {
-        console.log('Data logged successfully');
-      } else {
-        console.error('Failed to log data');
+      if (!response.ok) {
+        console.log('falling over');
+        throw new Error(`response status: ${response.status}`);
       }
-    } catch (error) {
-      console.error('Error logging data:', error);
+      const responseData = await response.json();
+      console.log(responseData['message']);
+
+      alert('Message successfully sent');
+    } catch (err) {
+      console.error(err);
+      alert('Error, please try resubmitting the form');
     }
-  }
+
+    // Prepare the data to be logged
+    // const logData = {
+    //   inputValues,
+    //   radioBtnValue,
+    //   textareaValues,
+    //   checkedState,
+    // };
+    // Write the data to the logging file
+    // try {
+    //   // Make an HTTP POST request to the logging endpoint
+    //   const response = await fetch('/api/logging', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify(logData),
+    //   });
+
+    //   if (response.ok) {
+    //     console.log('Data logged successfully');
+    //   } else {
+    //     console.error('Failed to log data');
+    //   }
+    // } catch (error) {
+    //   console.error('Error logging data:', error);
+    // }
+  };
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log('Form submitted');
+    setLoading(true);
+    const res = await fetch('/api/sendQuestion', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: inputValues.name,
+        email: inputValues.email,
+        message: textareaValues,
+      }),
+    });
+    const data = await res.json();
+    console.log(data);
+    setLoading(false);
+    // setInputValues([]); Clearing input values doesn't work on website
+    setTextareaValues('');
+  };
 
   return (
     <div className="card h-fit max-w-6xl p-5 md:p-12" id="form">
       {title && <h2 className={`${description ? 'mb-2' : 'mb-4'} text-2xl font-bold`}>{title}</h2>}
       {description && <p className="mb-4">{description}</p>}
-      <form id="contactForm">
+      <form id="contactForm" onSubmit={handleSubmit}>
         <div className="mb-6">
           {/* Inputs */}
           <div className="mx-0 mb-1 sm:mb-4">
@@ -157,8 +217,12 @@ const Form = ({ title, description, inputs, radioBtns, textarea, checkboxes, btn
         <div
           className={`${btnPosition === 'left' ? 'text-left' : btnPosition === 'right' ? 'text-right' : 'text-center'}`}
         >
-          <button type={btn.type} className="btn btn-primary sm:mb-0" onClick={handleClick}>
-            {btn.title}
+          <button
+            type={btn.type}
+            className="btn btn-primary sm:mb-0"
+            // onClick={handleClick}
+          >
+            {loading ? <CircularProgress color="secondary" size={20} /> : btn.title}
           </button>
         </div>
       </form>

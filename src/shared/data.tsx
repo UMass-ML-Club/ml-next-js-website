@@ -465,7 +465,7 @@ export const callToActionData: CallToActionProps = {
       title: 'Subscribe',
       description: 'Subscribe to the email list to receive updates about the club.',
       form: {
-        icon: IconMail,
+        // icon: IconMail,
         input: {
           type: 'email',
           name: 'email',
@@ -1168,7 +1168,7 @@ export const contactData: ContactProps = {
     },
   ],
   form: {
-    title: "Fill out the following information to contact us! P.S. this doesn't work yet",
+    title: "Fill out the following information to contact us!",
     inputs: [
       {
         type: 'text',

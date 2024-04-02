@@ -4,7 +4,7 @@ import { IconCheck, IconChevronDown, IconChevronUp } from '@tabler/icons-react';
 import { useEffect, useState } from 'react';
 import { Dropdown, Tab } from '~/shared/types';
 
-const Dropdown = ({ options, activeTab, onActiveTabSelected, iconUp, iconDown }: Dropdown) => {
+const DropdownItem = ({ options, activeTab, onActiveTabSelected, iconUp, iconDown }: Dropdown) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
   const [selectedOption, setSelectedOption] = useState<string>(options[activeTab].link?.label as string);
 
@@ -65,4 +65,4 @@ const Dropdown = ({ options, activeTab, onActiveTabSelected, iconUp, iconDown }:
   );
 };
 
-export default Dropdown;
+export default DropdownItem;

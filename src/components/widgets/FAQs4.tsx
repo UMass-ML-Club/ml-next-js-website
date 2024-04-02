@@ -6,7 +6,7 @@ import { IconMinus, IconPlus } from '@tabler/icons-react';
 import { FAQsProps, Item, Tab } from '~/shared/types';
 import { useState } from 'react';
 import useWindowSize from '~/hooks/useWindowSize';
-import Dropdown from '../common/Dropdown';
+import DropdownItem from '../common/Dropdown';
 
 const FAQs4 = ({ header, tabs }: FAQsProps) => {
   const { width } = useWindowSize();
@@ -48,7 +48,7 @@ const FAQs4 = ({ header, tabs }: FAQsProps) => {
                 </div>
               </div>
             ) : (
-              <Dropdown options={tabs as Tab[]} activeTab={activeTab} onActiveTabSelected={activeTabSelectedHandler} />
+              <DropdownItem options={tabs as Tab[]} activeTab={activeTab} onActiveTabSelected={activeTabSelectedHandler} />
             )}
             <div className="mt-4 h-fit md:col-span-2 md:mx-4 md:mt-0 md:px-4">
               {(tabs as Tab[]).map((tab, index) => (

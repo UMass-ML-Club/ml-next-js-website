@@ -922,6 +922,12 @@ export const eventData: EventProps = {
     // highlight: 'Testimonial',
   },
   testimonials: [
+    {
+      name: "All-Team Meeting",
+      location: "ILC N101",
+      description: "no one cares",
+      date: new Date('2024-04-10T19:00:00')
+    },
     // TODO: Change type testimonial and add dates, remove comment, image, icon
     // TODO: Link events to more info if necessary?
     {

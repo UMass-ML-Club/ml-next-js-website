@@ -13,9 +13,6 @@
     "prettier:check": "prettier --check --ignore-unknown ."
   },
   "dependencies": {
-    "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.11.5",
-    "@mui/material": "^5.15.14",
     "@tabler/icons-react": "^2.22.0",
     "aos": "^2.3.4",
     "fs": "^0.0.1-security",
@@ -23,7 +20,6 @@
     "markdown-it": "^13.0.1",
     "next": "^13.4.4",
     "next-themes": "^0.2.1",
-    "nodemailer": "^6.9.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sharp": "^0.32.1"
@@ -33,7 +29,6 @@
     "@types/aos": "^3.0.7",
     "@types/markdown-it": "^12.2.3",
     "@types/node": "20.2.3",
-    "@types/nodemailer": "^6.4.14",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
     "autoprefixer": "^10.4.14",
